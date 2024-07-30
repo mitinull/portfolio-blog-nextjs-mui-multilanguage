@@ -15,7 +15,7 @@ export default function Home() {
           </div>
         </Link>
 
-        <Link href="ema english" className={styles.card}>
+        <Link href="ema-english" className={styles.card}>
           <div>
             <h2>
               EMA English <span>-&gt;</span>

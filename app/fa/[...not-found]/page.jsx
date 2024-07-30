@@ -1,8 +1,6 @@
 import Link from "next/link";
 
-export default function NotFound({ params }) {
-  console.log(params);
-
+export default function NotFound() {
   return (
     <div>
       <h2>(ارور شمارهٔ ۴۰۴)</h2>
