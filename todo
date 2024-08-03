@@ -1,5 +1,6 @@
 + implementing light/dark theme (+scrollbar) with local storage
++ deploying on mitinull.vercel.app
 - add mui and make a card component
 - href lang tags for all pages
 - add some pages
-- test static deploying
+- test static export
