@@ -1,4 +1,5 @@
-- href lang tags for all pages
++ implementing light/dark theme (+scrollbar) with local storage
 - add mui and make a card component
+- href lang tags for all pages
 - add some pages
 - test static deploying

@@ -1,12 +1,22 @@
-import styles from "../page.module.css";
+import { vazir } from "@/utils/fonts";
+import { Box, Button, Typography } from "@mui/material";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <Link href="/fa">فارسی</Link>
-      <div className={styles.grid}>
-        <Link href="./basketnull" className={styles.card}>
+    <main>
+      <Typography variant="h2">hello IS This Basketnull</Typography>
+      <Button>what About this Basketnull</Button>
+      <Box fontWeight={900} component="div" className={vazir.className}>
+        اینجا یه چیزی می‌نویسم
+        <Button>این فونت وزیر است</Button>
+        <Typography>این تایپوگرافی است</Typography>
+      </Box>
+      <Link href="/fa" className={vazir.className}>
+        فارسی
+      </Link>
+      <div>
+        <Link href="./basketnull">
           <div>
             <h2>
               Basketnull <span>-&gt;</span>
@@ -15,7 +25,7 @@ export default function Home() {
           </div>
         </Link>
 
-        <Link href="ema-english" className={styles.card}>
+        <Link href="ema-english">
           <div>
             <h2>
               EMA English <span>-&gt;</span>

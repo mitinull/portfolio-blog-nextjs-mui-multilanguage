@@ -1,8 +1,7 @@
-import { Inter } from "next/font/google";
 import "../globals.css";
 import { HREFLANG_PATHS } from "../../utils/constants";
-
-const inter = Inter({ subsets: ["latin"] });
+import { roboto } from "@/utils/fonts";
+import { Providers } from "@/utils/providers";
 
 export const metadata = {
   alternates: {
@@ -13,10 +12,12 @@ export const metadata = {
 
 export default function EnLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <h3>En layout</h3>
-        {children}
+    <html lang="en" suppressHydrationWarning>
+      <body className={roboto.className}>
+        <Providers>
+          <h3>En layout</h3>
+          {children}
+        </Providers>
       </body>
     </html>
   );

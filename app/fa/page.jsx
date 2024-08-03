@@ -1,21 +1,24 @@
-import styles from "../page.module.css";
+import { Typography } from "@mui/material";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main>
       <Link href="/">English</Link>
-      <div className={styles.grid}>
-        <Link href="./basketnull" className={styles.card}>
+      <div>
+        <Link href="./basketnull">
           <div>
             <h2>
               بسکتنال <span>-&gt;</span>
             </h2>
+            <Typography>
+              hello Ema 
+            </Typography>
             <p>Simple 2d game made using Love2d.</p>
           </div>
         </Link>
 
-        <Link href="ema english" className={styles.card}>
+        <Link href="ema english">
           <div>
             <h2>
               EMA English <span>-&gt;</span>

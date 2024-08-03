@@ -1,22 +1,25 @@
-import { Vazirmatn } from "next/font/google";
 import "../globals.css";
 import { HREFLANG_PATHS } from "../../utils/constants";
-
-const vazir = Vazirmatn({ subsets: ["arabic"] });
+import { SwitchTheme } from "../../components/SwitchTheme";
+import { vazir } from "@/utils/fonts";
+import { Providers } from "@/utils/providers";
 
 export const metadata = {
   alternates: {
-    canonical: "/fa",
+    canonical: "/fa/",
     languages: HREFLANG_PATHS,
   },
 };
 
 export default function FaLayout({ children }) {
   return (
-    <html lang="fa-IR" dir="rtl">
+    <html lang="fa-IR" dir="rtl" suppressHydrationWarning>
       <body className={vazir.className}>
-        <h3>FaLayout</h3>
-        {children}
+        <Providers>
+          <SwitchTheme />
+          <h3 style={{ position: "absolute" }}>FaLayout</h3>
+          {children}
+        </Providers>
       </body>
     </html>
   );
