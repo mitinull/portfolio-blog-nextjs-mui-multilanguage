@@ -1,6 +1,9 @@
 import { vazir } from "@/utils/fonts";
+import { generateHreflang } from "@/utils/generateHreflang";
 import { Box, Button, Typography } from "@mui/material";
 import Link from "next/link";
+
+export const metadata = generateHreflang("", "en");
 
 export default function Home() {
   return (

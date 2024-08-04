@@ -1,5 +1,8 @@
+import { generateHreflang } from "@/utils/generateHreflang";
 import { Typography } from "@mui/material";
 import Link from "next/link";
+
+export const metadata = generateHreflang("", "fa");
 
 export default function Home() {
   return (
@@ -11,9 +14,7 @@ export default function Home() {
             <h2>
               بسکتنال <span>-&gt;</span>
             </h2>
-            <Typography>
-              hello Ema 
-            </Typography>
+            <Typography>hello Ema</Typography>
             <p>Simple 2d game made using Love2d.</p>
           </div>
         </Link>
