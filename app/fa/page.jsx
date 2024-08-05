@@ -2,7 +2,29 @@ import { generateHreflang } from "@/utils/generateHreflang";
 import { Typography } from "@mui/material";
 import Link from "next/link";
 
-export const metadata = generateHreflang("", "fa");
+export const metadata = {
+  keywords: [
+    "Next.js",
+    "React",
+    "ری اکت",
+    "ری‌اکت",
+    "فرانت",
+    "Mitinull",
+    "میتینال",
+    "Portfolio",
+    "پورتفولیو",
+    "Blog",
+    "وبلاگ",
+    "بازی",
+    "بازی سازی",
+    "توسعه وب",
+    "هوش مصنوعی",
+    "محمد",
+    "ترابی",
+    "محمد ترابی",
+  ],
+  ...generateHreflang("", "fa"),
+};
 
 export default function Home() {
   return (

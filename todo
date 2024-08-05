@@ -1,7 +1,8 @@
 + implementing light/dark theme (+scrollbar) with local storage
 + deploying on mitinull.vercel.app
 + href lang tags for all pages
-- fixing keywords, author etc. tags for posts pages
++ test static export (this and other projects)
++ fixing keywords, author etc. tags for posts pages
+- make 404 page top margin "vh"
 - add mui and make a card component
 - add some pages
-- test static export (this and other projects)

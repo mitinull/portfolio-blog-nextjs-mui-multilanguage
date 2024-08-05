@@ -7,7 +7,7 @@ export const metadata = {
     default: "Mitinull",
   },
   description:
-    "Mitinull's portfolio highlights a range of projects in web, software and game development, innovative design, creative tech solutions, etc. Explore the latest work and discover more unique content by Mitinull.",
+    "Mitinull's portfolio and blog present an exciting mix of web development, software engineering, and game development projects, along with creative works and personal projects.",
   icons: {
     icon: [
       {
@@ -24,15 +24,6 @@ export const metadata = {
   },
   creator: "Mitinull",
   authors: [{ name: "Mitinull", url: "https://github.com/mitinull" }],
-  keywords: [
-    "Next.js",
-    "React",
-    "JavaScript",
-    "Frontend",
-    "Mitinull",
-    "Portfolio",
-    "Projects",
-  ],
 };
 
 export default function RootLayout({ children }) {
