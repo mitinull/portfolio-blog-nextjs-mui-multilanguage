@@ -1,6 +1,28 @@
 import { vazir } from "@/utils/fonts";
+import { generateHreflang } from "@/utils/generateHreflang";
 import { Box, Button, Typography } from "@mui/material";
 import Link from "next/link";
+
+export const metadata = {
+  keywords: [
+    "Next.js",
+    "React",
+    "JavaScript",
+    "Frontend",
+    "Mitinull",
+    "Portfolio",
+    "Blog",
+    "Projects",
+    "Game",
+    "Game Development",
+    "Web Development",
+    "AI",
+    "Mohammad",
+    "Torabi",
+    "Mohammad Torabi",
+  ],
+  ...generateHreflang("", "en"),
+};
 
 export default function Home() {
   return (

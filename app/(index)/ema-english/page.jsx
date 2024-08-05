@@ -1,12 +1,11 @@
+import { generateHreflang } from "@/utils/generateHreflang";
 import Link from "next/link";
 
 export const metadata = {
   title: "EMA English",
   description: "EMA English is a persian podcast.",
 
-  alternates: {
-    canonical: "/ema english",
-  },
+  // ...generateHreflang("ema-english", "en"),
 };
 
 export default function Basketnull() {

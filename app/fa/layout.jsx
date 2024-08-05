@@ -4,13 +4,6 @@ import { SwitchTheme } from "../../components/SwitchTheme";
 import { vazir } from "@/utils/fonts";
 import { Providers } from "@/utils/providers";
 
-export const metadata = {
-  alternates: {
-    canonical: "/fa/",
-    languages: HREFLANG_PATHS,
-  },
-};
-
 export default function FaLayout({ children }) {
   return (
     <html lang="fa-IR" dir="rtl" suppressHydrationWarning>
