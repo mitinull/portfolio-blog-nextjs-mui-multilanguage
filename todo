@@ -3,6 +3,7 @@
 + href lang tags for all pages
 + test static export (this and other projects)
 + fixing keywords, author etc. tags for posts pages
-- make 404 page top margin "vh"
++ make 404 page top margin "vh"
++ fix 404 (english route)
 - add mui and make a card component
 - add some pages
