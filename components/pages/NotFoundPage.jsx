@@ -18,7 +18,7 @@ export function NotFoundPage({ lang }) {
             : "Looks like this page is on vacation!"}
         </Typography>
         <Button
-          href="/fa"
+          href={isFa ? "/fa" : "/"}
           LinkComponent={Link}
           variant="contained"
           sx={{ mt: 3, fontFamily: "inherit", gap: 1 }}
