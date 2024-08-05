@@ -1,6 +1,9 @@
+import { BasketnullCard } from "@/components/cards/BasketnullCard";
+import { EmaEnglishCard } from "@/components/cards/EmaEnglishCard";
+import { SwitchTheme } from "@/components/SwitchTheme";
 import { vazir } from "@/utils/fonts";
 import { generateHreflang } from "@/utils/generateHreflang";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import Link from "next/link";
 
 export const metadata = {
@@ -27,6 +30,7 @@ export const metadata = {
 export default function Home() {
   return (
     <main>
+      <SwitchTheme />
       <Typography variant="h2">hello IS This Basketnull</Typography>
       <Button>what About this Basketnull</Button>
       <Box fontWeight={900} component="div" className={vazir.className}>
@@ -56,6 +60,16 @@ export default function Home() {
           </div>
         </Link>
       </div>
+      <Container>
+        <Grid container spacing={2}>
+          <Grid item sm={6}>
+            <BasketnullCard />
+          </Grid>
+          <Grid item sm={6}>
+            <EmaEnglishCard />
+          </Grid>
+        </Grid>
+      </Container>
     </main>
   );
 }
