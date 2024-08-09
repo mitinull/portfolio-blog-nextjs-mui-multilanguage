@@ -10,8 +10,8 @@ import {
   Typography,
 } from "@mui/material";
 
-export function BasketnullCard() {
-  const language = "english";
+export function BasketnullCard({lang}) {
+  const language = lang;
   
   return (
     <Card>
@@ -29,12 +29,12 @@ export function BasketnullCard() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          {language === "english"
+          {language === "en"
             ? "Basketnull Game"
             : "بازی بسکتنال (Basketnull)"}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          {language === "english"
+          {language === "en"
             ? `Basketnull is a 2D web game, made by LUA and LOVE2D. You can play
         this game on a desktop browser right now.`
             : `بازی بسکتنال یک بازی دو بعدی تحت وب است. این بازی با زبان Lua و فریمورک Love2D ساخته شده است. 
@@ -42,7 +42,7 @@ export function BasketnullCard() {
         </Typography>
         <Stack direction="row" mt={2}>
           <Chip
-            label={language === "english" ? "Game" : "بازی سازی"}
+            label={language === "en" ? "Game" : "بازی سازی"}
             size="small"
             variant="outlined"
           />
@@ -51,16 +51,16 @@ export function BasketnullCard() {
       <CardActions>
         <Button size="small">
           <LinkIcon sx={{ fontSize: 18 }} />
-          {language === "english" ? "Play the Game" : "رفتن به سایت"}
+          {language === "en" ? "Play the Game" : "رفتن به سایت"}
         </Button>
         <Button size="small">
           <ReadMore
             sx={{
               fontSize: 18,
-              scale: language === "english" ? "1" : "-1",
+              scale: language === "en" ? "1" : "-1",
             }}
           />
-          {language === "english" ? "Read More" : "بیشتر بخوانید"}
+          {language === "en" ? "Read More" : "بیشتر بخوانید"}
         </Button>
       </CardActions>
     </Card>

@@ -1,5 +1,9 @@
+import { BasketnullCard } from "@/components/cards/BasketnullCard";
+import { EmaEnglishCard } from "@/components/cards/EmaEnglishCard";
+import { PostsContainer } from "@/components/PostsContainer";
+import { PostWrapper } from "@/components/PostWrapper";
+import { SwitchTheme } from "@/components/SwitchTheme";
 import { generateHreflang } from "@/utils/generateHreflang";
-import { Typography } from "@mui/material";
 import Link from "next/link";
 
 export const metadata = {
@@ -27,29 +31,21 @@ export const metadata = {
 };
 
 export default function Home() {
+  const lang = "fa";
+
   return (
     <main>
+      <SwitchTheme />
       <Link href="/">English</Link>
-      <div>
-        <Link href="./basketnull">
-          <div>
-            <h2>
-              بسکتنال <span>-&gt;</span>
-            </h2>
-            <Typography>hello Ema</Typography>
-            <p>Simple 2d game made using Love2d.</p>
-          </div>
-        </Link>
 
-        <Link href="ema english">
-          <div>
-            <h2>
-              EMA English <span>-&gt;</span>
-            </h2>
-            <p>A Persian podcast to learn English with musics and songs.</p>
-          </div>
-        </Link>
-      </div>
+      <PostsContainer>
+        <PostWrapper>
+          <BasketnullCard lang={lang} />
+        </PostWrapper>
+        <PostWrapper>
+          <EmaEnglishCard lang={lang} />
+        </PostWrapper>
+      </PostsContainer>
     </main>
   );
 }

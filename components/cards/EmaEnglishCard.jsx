@@ -12,7 +12,7 @@ import {
 
 export function EmaEnglishCard() {
   const language = "english";
-  
+
   return (
     <Card>
       <CardMedia
@@ -34,11 +34,7 @@ export function EmaEnglishCard() {
             : "بازی بسکتنال (Basketnull)"}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          {language === "english"
-            ? `Basketnull is a 2D web game, made by LUA and LOVE2D. You can play
-        this game on a desktop browser right now.`
-            : `بازی بسکتنال یک بازی دو بعدی تحت وب است. این بازی با زبان Lua و فریمورک Love2D ساخته شده است. 
-          همین الان می‌توانید این بازی را توسط مرورگر کامپیوتر خود اجرا کنید.`}
+          A Persian podcast to learn English with musics and songs.
         </Typography>
         <Stack direction="row" mt={2}>
           <Chip
