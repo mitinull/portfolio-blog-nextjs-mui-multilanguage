@@ -1,6 +1,4 @@
 import "../globals.css";
-import { HREFLANG_PATHS } from "../../utils/constants";
-import { SwitchTheme } from "../../components/SwitchTheme";
 import { vazir } from "@/utils/fonts";
 import { Providers } from "@/utils/providers";
 
@@ -9,8 +7,7 @@ export default function FaLayout({ children }) {
     <html lang="fa-IR" dir="rtl" suppressHydrationWarning>
       <body className={vazir.className}>
         <Providers>
-          <SwitchTheme />
-          <h3 style={{ position: "absolute" }}>FaLayout</h3>
+          <h3>FaLayout</h3>
           {children}
         </Providers>
       </body>
