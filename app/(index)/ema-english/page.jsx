@@ -39,7 +39,7 @@ export default function Basketnull() {
       </p>
       <p>
         We started recording several episodes and uploaded them to Castbox.
-        Initially, we thought, "OMG, this is awful.😅" We had bad microphones,
+        Initially, we thought, "OMG, this is awful.😅" We had (and probably still have) bad microphones,
         and we couldn't speak fluently, even in Persian! But it was fun, so we
         kept doing it. After recording several episodes, we gained more
         subscribers than we expected. However, we got busy and stopped recording
