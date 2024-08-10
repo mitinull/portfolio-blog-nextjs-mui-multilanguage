@@ -34,7 +34,7 @@ export function EmaEnglishCard({ lang }) {
           {lang === "en"
             ? `EMA English is a Persian podcast that helps 
             you learn English through songs and music.
-             If you enjoy our content, feel free to subscribe.`
+             If you enjoy our podcast, feel free to subscribe.`
             : `اِما انگلیش (EMA English) یک پادکست فارسیه
             برای یادگیری زبان انگلیسی به همراه ترانه و موسیقی‌.
             اگر دوست داشتید می‌توانید پادکست ما رو دنبال کنید.`}
