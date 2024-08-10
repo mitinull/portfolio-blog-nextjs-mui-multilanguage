@@ -6,8 +6,10 @@
 + make 404 page top margin "vh"
 + fix 404 (english route)
 + add cards
-- fixing card's style
-- adding cards to persian page
++ fixing card's style
++ adding cards to persian page
 - style pages
 - add some pages
 - fixing SwitchThemeButton flickering
+- fixing card's height
+- implementing filter with tags

@@ -1,6 +1,5 @@
-import { ReadMore, Link as LinkIcon } from "@mui/icons-material";
+import { Podcasts, SportsEsports } from "@mui/icons-material";
 import {
-  Button,
   Card,
   CardActions,
   CardContent,
@@ -9,10 +8,10 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
+import { MyCardButton } from "../MyCardButton";
+import { CustomReadMoreIcon } from "../CustomReadMoreIcon";
 
-export function EmaEnglishCard() {
-  const language = "english";
-
+export function EmaEnglishCard({ lang }) {
   return (
     <Card>
       <CardMedia
@@ -29,35 +28,39 @@ export function EmaEnglishCard() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          {language === "english"
-            ? "Basketnull Game"
-            : "بازی بسکتنال (Basketnull)"}
+          {lang === "en" ? "EMA English Podcast" : "پادکست اِما انگلیش"}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          A Persian podcast to learn English with musics and songs.
+          {lang === "en"
+            ? `EMA English is a Persian podcast that helps 
+            you learn English through songs and music.
+             If you enjoy our content, feel free to subscribe.`
+            : `اِما انگلیش (EMA English) یک پادکست فارسیه
+            برای یادگیری زبان انگلیسی به همراه ترانه و موسیقی‌.
+            اگر دوست داشتید می‌توانید پادکست ما رو دنبال کنید.`}
         </Typography>
         <Stack direction="row" mt={2}>
           <Chip
-            label={language === "english" ? "Game" : "بازی سازی"}
+            label={lang === "en" ? "content" : "تولید محتوا"}
             size="small"
             variant="outlined"
           />
         </Stack>
       </CardContent>
       <CardActions>
-        <Button size="small">
-          <LinkIcon sx={{ fontSize: 18 }} />
-          {language === "english" ? "Play the Game" : "رفتن به سایت"}
-        </Button>
-        <Button size="small">
-          <ReadMore
-            sx={{
-              fontSize: 18,
-              scale: language === "english" ? "1" : "-1",
-            }}
-          />
-          {language === "english" ? "Read More" : "بیشتر بخوانید"}
-        </Button>
+        <MyCardButton
+          Icon={<Podcasts />}
+          href="https://castbox.fm/channel/id5058728?utm_source=website&utm_medium=dlink&utm_campaign=web_share&utm_content=EMA%20English%20%7C%20English%20Music%20%7C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%20%D8%B2%D8%A8%D8%A7%D9%86"
+          newTab
+        >
+          {lang === "en" ? "Listen to Podcast" : "برو به صفحه پادکست"}
+        </MyCardButton>
+        <MyCardButton
+          Icon={<CustomReadMoreIcon lang={lang} />}
+          href="./ema-english"
+        >
+          {lang === "en" ? "Read More" : "بیشتر بخوانید"}
+        </MyCardButton>
       </CardActions>
     </Card>
   );
