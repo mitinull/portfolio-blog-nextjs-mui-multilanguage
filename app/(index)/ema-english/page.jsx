@@ -5,7 +5,14 @@ import { PageHeader } from "@/components/mui-components/PageHeader";
 import { PageImage } from "@/components/mui-components/PageImage";
 import { ParagraphMedium } from "@/components/mui-components/ParagraphMedium";
 import { Podcasts } from "@mui/icons-material";
-import { Button, Container, Stack, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Container,
+  Paper,
+  Stack,
+  Typography,
+} from "@mui/material";
 import Link from "next/link";
 
 export const metadata = {
@@ -19,56 +26,61 @@ export default function Basketnull() {
   return (
     <main>
       <PageHeader>
-        <Stack spacing={{ xs: 3, sm: 5 }} px={{ xs: 4, sm: 8 }}>
+        <Stack spacing={{ xs: 3.5, sm: 4 }} px={{ xs: 4, sm: 0 }}>
           <Heading1>EMA English</Heading1>
           <Heading3>
             EMA English is a Persian podcast for learning English with musics,
             songs and lyrics. 🎧📃
           </Heading3>
         </Stack>
-        <Stack mt={{ xs: 5, sm: 10 }} mx={{ xs: 0, sm: 8 }}>
+        <Stack mt={{ xs: 6, sm: 7 }}>
           <PageImage
             alt="EMA English Logo"
             light="/images/ema-light.jpg"
             dark="/images/ema-dark.jpg"
           />
         </Stack>
+
         <Typography
           textAlign="center"
           fontSize={{ xs: 18, sm: 32 }}
-          mt={{ xs: 5, sm: 10 }}
+          mt={{ xs: 5, sm: 8 }}
           fontWeight={300}
         >
           CURRENT SUBSCRIBERS
         </Typography>
-        <Typography
-          textAlign="center"
-          fontSize={{ xs: 28, sm: 48 }}
-          fontWeight={300}
-        >
-          558
-        </Typography>
+        <Paper sx={{ p: 1, mx: 4, my: 1.7, borderRadius: 100 }}>
+          <Typography
+            textAlign="center"
+            fontSize={{ xs: 28, sm: 48 }}
+            fontWeight={300}
+          >
+            558
+          </Typography>
+        </Paper>
         <Typography
           textAlign="center"
           fontSize={{ xs: 18, sm: 32 }}
-          mt={{ xs: 5, sm: 10 }}
+          mt={{ xs: 5, sm: 6 }}
           fontWeight={300}
         >
-          CURRENT PLAYS
+          TOTAL PODCAST PLAYS
         </Typography>
-        <Typography
-          textAlign="center"
-          fontSize={{ xs: 28, sm: 48 }}
-          fontWeight={300}
-        >
-          558
-        </Typography>
-        <Stack px={{ xs: 4, sm: 8 }} mt={{ xs: 3, sm: 8 }}>
+        <Paper sx={{ p: 1, mx: 4, my: 1.7, borderRadius: 100 }}>
+          <Typography
+            textAlign="center"
+            fontSize={{ xs: 28, sm: 48 }}
+            fontWeight={300}
+          >
+            5,800
+          </Typography>
+        </Paper>
+        <Stack px={{ xs: 4, sm: 8 }} mt={{ xs: 7, sm: 8 }}>
           <Button
-            variant="outlined"
+            variant="text"
             color="inherit"
             startIcon={<Podcasts />}
-            sx={{ borderRadius: 9 }}
+            sx={{ borderRadius: 100, p: 1.5 }}
             size="large"
           >
             Subscribe to Podcast

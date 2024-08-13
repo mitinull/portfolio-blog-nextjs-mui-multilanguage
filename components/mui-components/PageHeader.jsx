@@ -6,8 +6,8 @@ export function PageHeader({ color, children }) {
       color={color || "info"}
       icon={false}
       sx={{
-        px: 0,
-        pt: { xs: 4, sm: 12 },
+        px: { xs: 0, sm: 2 },
+        pt: { xs: 6.5, sm: 12 },
         pb: { xs: 5, sm: 12 },
         display: "flex",
         justifyContent: "center",
