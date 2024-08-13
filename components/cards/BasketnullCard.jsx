@@ -39,7 +39,7 @@ export function BasketnullCard({ lang }) {
              You can play it right now on your computer browser.`
             : `بازی بسکتنال یک بازی دو بعدی تحت وبه.
              این بازی رو با زبان Lua و فریمورک Love2D ساختم. 
-          همین الان می‌توانید این بازی رو با مرورگر کامپیوتر خود اجرا کنید.`}
+          همین الان می‌توانید این بازی رو با مرورگر کامپیوترتون اجرا کنید.`}
         </MyCardBody>
         <Stack direction="row" mt={2}>
           <Chip

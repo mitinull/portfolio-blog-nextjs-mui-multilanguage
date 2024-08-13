@@ -1,17 +1,11 @@
 import { Heading1 } from "@/components/mui-components/Heading1";
 import { Heading3 } from "@/components/mui-components/Heading3";
 import { PageContent } from "@/components/mui-components/PageContent";
+import { PageHeader } from "@/components/mui-components/PageHeader";
+import { PageImage } from "@/components/mui-components/PageImage";
 import { ParagraphMedium } from "@/components/mui-components/ParagraphMedium";
-import { generateHreflang } from "@/utils/generateHreflang";
 import { Podcasts } from "@mui/icons-material";
-import {
-  Alert,
-  Button,
-  Container,
-  Stack,
-  Typography,
-} from "@mui/material";
-import Image from "next/image";
+import { Button, Container, Stack, Typography } from "@mui/material";
 import Link from "next/link";
 
 export const metadata = {
@@ -24,76 +18,63 @@ export const metadata = {
 export default function Basketnull() {
   return (
     <main>
-      <Alert
-        color="info"
-        icon={false}
-        sx={{
-          px: 0,
-          pt: { xs: 4, sm: 12 },
-          pb: { xs: 5, sm: 12 },
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-        <Container>
-          <Stack spacing={{ xs: 3, sm: 5 }} px={{ xs: 4, sm: 8 }}>
-            <Heading1>EMA English</Heading1>
-            <Heading3>
-              EMA English is a Persian podcast for learning English with musics,
-              songs and lyrics. 🎧📃
-            </Heading3>
-          </Stack>
-          <Stack
-            mt={{ xs: 5, sm: 10 }}
-            mx={{ xs: 0, sm: 8 }}
-            borderRadius={1}
-            overflow="hidden"
+      <PageHeader>
+        <Stack spacing={{ xs: 3, sm: 5 }} px={{ xs: 4, sm: 8 }}>
+          <Heading1>EMA English</Heading1>
+          <Heading3>
+            EMA English is a Persian podcast for learning English with musics,
+            songs and lyrics. 🎧📃
+          </Heading3>
+        </Stack>
+        <Stack mt={{ xs: 5, sm: 10 }} mx={{ xs: 0, sm: 8 }}>
+          <PageImage
+            alt="EMA English Logo"
+            light="/images/ema-light.jpg"
+            dark="/images/ema-dark.jpg"
+          />
+        </Stack>
+        <Typography
+          textAlign="center"
+          fontSize={{ xs: 18, sm: 32 }}
+          mt={{ xs: 5, sm: 10 }}
+          fontWeight={300}
+        >
+          CURRENT SUBSCRIBERS
+        </Typography>
+        <Typography
+          textAlign="center"
+          fontSize={{ xs: 28, sm: 48 }}
+          fontWeight={300}
+        >
+          558
+        </Typography>
+        <Typography
+          textAlign="center"
+          fontSize={{ xs: 18, sm: 32 }}
+          mt={{ xs: 5, sm: 10 }}
+          fontWeight={300}
+        >
+          CURRENT PLAYS
+        </Typography>
+        <Typography
+          textAlign="center"
+          fontSize={{ xs: 28, sm: 48 }}
+          fontWeight={300}
+        >
+          558
+        </Typography>
+        <Stack px={{ xs: 4, sm: 8 }} mt={{ xs: 3, sm: 8 }}>
+          <Button
+            variant="outlined"
+            color="inherit"
+            startIcon={<Podcasts />}
+            sx={{ borderRadius: 9 }}
+            size="large"
           >
-            <Image
-              alt="basketnull game"
-              src="/images/ema-light.jpg"
-              className="img-light"
-              width={1920}
-              height={1080}
-              style={{ objectFit: "cover", width: "100%", height: "auto" }}
-            />
-            <Image
-              alt="basketnull game"
-              src="/images/ema-dark.jpg"
-              className="img-dark"
-              width={1920}
-              height={1080}
-              style={{ objectFit: "cover", width: "100%", height: "auto" }}
-            />
-          </Stack>
-          <Typography
-            textAlign="center"
-            fontSize={{ xs: 18, sm: 32 }}
-            mt={{ xs: 5, sm: 10 }}
-            fontWeight={300}
-          >
-            CURRENT SUBSCRIBERS
-          </Typography>
-          <Typography
-            textAlign="center"
-            fontSize={{ xs: 28, sm: 48 }}
-            fontWeight={300}
-          >
-            558
-          </Typography>
-          <Stack px={{ xs: 4, sm: 8 }} mt={{ xs: 3, sm: 8 }}>
-            <Button
-              variant="outlined"
-              color="inherit"
-              startIcon={<Podcasts />}
-              sx={{ borderRadius: 9 }}
-              size="large"
-            >
-              Subscribe to Podcast
-            </Button>
-          </Stack>
-        </Container>
-      </Alert>
+            Subscribe to Podcast
+          </Button>
+        </Stack>
+      </PageHeader>
       <Container sx={{ p: 0 }}>
         <Container maxWidth="md">
           <PageContent>
