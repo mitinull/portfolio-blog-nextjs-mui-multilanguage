@@ -10,11 +10,10 @@ import {
   Box,
   Button,
   Container,
-  Paper,
   Stack,
-  Typography,
 } from "@mui/material";
 import Link from "next/link";
+import { EmaInfo } from "./getSubsAndPlays/EmaInfo";
 
 export const metadata = {
   title: "EMA English",
@@ -23,7 +22,7 @@ export const metadata = {
   // ...generateHreflang("ema-english", "en"),
 };
 
-export default function Basketnull() {
+export default async function Basketnull() {
   return (
     <main>
       <PageHeader>
@@ -42,52 +41,7 @@ export default function Basketnull() {
           />
         </Stack>
         <Box px={{ xs: 4, sm: 0 }}>
-          <Typography
-            textAlign="center"
-            fontSize={{ xs: 18, sm: 25 }}
-            mt={{ xs: 5, sm: 8 }}
-            fontWeight={300}
-          >
-            CURRENT SUBSCRIBERS
-          </Typography>
-          <Paper
-            sx={{
-              p: { xs: 1, sm: 1.2 },
-              my: { xs: 1.7, sm: 2 },
-              borderRadius: { xs: 100, sm: 1 },
-            }}
-          >
-            <Typography
-              textAlign="center"
-              fontSize={{ xs: 28, sm: 46 }}
-              fontWeight={300}
-            >
-              558
-            </Typography>
-          </Paper>
-          <Typography
-            textAlign="center"
-            fontSize={{ xs: 18, sm: 25 }}
-            mt={{ xs: 5, sm: 6 }}
-            fontWeight={300}
-          >
-            TOTAL PODCAST PLAYS
-          </Typography>
-          <Paper
-            sx={{
-              p: { xs: 1, sm: 1.2 },
-              my: { xs: 1.7, sm: 2 },
-              borderRadius: { xs: 100, sm: 1 },
-            }}
-          >
-            <Typography
-              textAlign="center"
-              fontSize={{ xs: 28, sm: 46 }}
-              fontWeight={300}
-            >
-              5,800
-            </Typography>
-          </Paper>
+          <EmaInfo />
           <Stack mt={{ xs: 7, sm: 8 }}>
             <Button
               variant="text"
@@ -114,15 +68,15 @@ export default function Basketnull() {
               I didn't know what "glitter" meant until I heard Dua Lipa's voice
               singing,{" "}
               <PageQuote>
-                Glitter in the sky, glitter in our eyes, shining
-                just the way we are.
+                Glitter in the sky, glitter in our eyes, shining just the way we
+                are.
               </PageQuote>{" "}
               After that, I looked up the meaning of "glitter" once, and it was
               enough for me to remember it forever! Do you know why I know the
               meaning of "ambition"? Because{" "}
               <PageQuote>
-                All my friends are toxic, all ambitionless, so rude and
-                always negative!
+                All my friends are toxic, all ambitionless, so rude and always
+                negative!
               </PageQuote>{" "}
               (This is another song if you haven't figured it out!)
             </ParagraphMedium>

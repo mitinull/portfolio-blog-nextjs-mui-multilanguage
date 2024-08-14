@@ -11,6 +11,7 @@ export function PageImage({ alt, light, dark }) {
         width={1920}
         height={1080}
         style={{ objectFit: "cover", width: "100%", height: "auto" }}
+        priority
       />
       <Image
         alt={alt}
@@ -19,6 +20,7 @@ export function PageImage({ alt, light, dark }) {
         width={1920}
         height={1080}
         style={{ objectFit: "cover", width: "100%", height: "auto" }}
+        priority
       />
     </Stack>
   );
