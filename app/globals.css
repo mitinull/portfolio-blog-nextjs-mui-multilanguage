@@ -19,3 +19,15 @@
   padding: 0;
   margin: 0;
 }
+
+b {
+  font-weight: 400;
+}
+
+[data-mui-color-scheme="dark"] ::selection {
+  background-color: rgba(123, 226, 255, 0.133);
+}
+
+[data-mui-color-scheme="light"] ::selection {
+  background-color: rgba(0, 200, 255, 0.347);
+}

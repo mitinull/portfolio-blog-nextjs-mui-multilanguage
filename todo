@@ -8,6 +8,7 @@
 + add cards
 + fixing card's style
 + adding cards to persian page
++ changing selection colors for both themes
 - style pages
 - add some pages
 - fixing SwitchThemeButton flickering
@@ -15,3 +16,4 @@
 - implementing filter with tags
 - lazy blurry loading for images (cards and page)
 - adding website header
+- changing card's justify text

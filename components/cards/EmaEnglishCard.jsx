@@ -8,12 +8,14 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import { MyCardButton } from "../MyCardButton";
+import { MyCardButton } from "../mui-components/MyCardButton";
 import { CustomReadMoreIcon } from "../CustomReadMoreIcon";
+import { MyCardBody } from "../mui-components/MyCardBody";
+import { MyCard } from "../mui-components/MyCard";
 
 export function EmaEnglishCard({ lang }) {
   return (
-    <Card>
+    <MyCard>
       <CardMedia
         component="img"
         alt="basketnull game"
@@ -30,7 +32,7 @@ export function EmaEnglishCard({ lang }) {
         <Typography gutterBottom variant="h5" component="div">
           {lang === "en" ? "EMA English Podcast" : "پادکست اِما انگلیش"}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <MyCardBody>
           {lang === "en"
             ? `EMA English is a Persian podcast that helps 
             you learn English through songs and music.
@@ -38,7 +40,7 @@ export function EmaEnglishCard({ lang }) {
             : `اِما انگلیش (EMA English) یک پادکست فارسیه
             برای یادگیری زبان انگلیسی به همراه ترانه و موسیقی‌.
             اگر دوست داشتید می‌توانید پادکست ما رو دنبال کنید.`}
-        </Typography>
+        </MyCardBody>
         <Stack direction="row" mt={2}>
           <Chip
             label={lang === "en" ? "content" : "تولید محتوا"}
@@ -62,6 +64,6 @@ export function EmaEnglishCard({ lang }) {
           {lang === "en" ? "Read More" : "بیشتر بخوانید"}
         </MyCardButton>
       </CardActions>
-    </Card>
+    </MyCard>
   );
 }
