@@ -12,8 +12,8 @@
 - style pages
 - add some pages
 - fixing SwitchThemeButton flickering
-- fixing card's height
-- implementing filter with tags
+- fixing different card heights
 - lazy blurry loading for images (cards and page)
 - adding website header
-- changing card's justify text
+- changing card's justify text?
+- implementing filter with tags
