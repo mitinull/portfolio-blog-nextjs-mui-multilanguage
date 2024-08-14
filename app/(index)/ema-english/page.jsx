@@ -26,7 +26,7 @@ export default function Basketnull() {
   return (
     <main>
       <PageHeader>
-        <Stack spacing={{ xs: 3.5, sm: 4 }} px={{ xs: 4, sm: 0 }}>
+        <Stack spacing={{ xs: 3.5, sm: 4.5 }} px={{ xs: 4, sm: 0 }}>
           <Heading1>EMA English</Heading1>
           <Heading3>
             EMA English is a Persian podcast for learning English with musics,
@@ -40,52 +40,65 @@ export default function Basketnull() {
             dark="/images/ema-dark.jpg"
           />
         </Stack>
-
-        <Typography
-          textAlign="center"
-          fontSize={{ xs: 18, sm: 32 }}
-          mt={{ xs: 5, sm: 8 }}
-          fontWeight={300}
-        >
-          CURRENT SUBSCRIBERS
-        </Typography>
-        <Paper sx={{ p: 1, mx: 4, my: 1.7, borderRadius: 100 }}>
+        <Box px={{ xs: 4, sm: 0 }}>
           <Typography
             textAlign="center"
-            fontSize={{ xs: 28, sm: 48 }}
+            fontSize={{ xs: 18, sm: 25 }}
+            mt={{ xs: 5, sm: 8 }}
             fontWeight={300}
           >
-            558
+            CURRENT SUBSCRIBERS
           </Typography>
-        </Paper>
-        <Typography
-          textAlign="center"
-          fontSize={{ xs: 18, sm: 32 }}
-          mt={{ xs: 5, sm: 6 }}
-          fontWeight={300}
-        >
-          TOTAL PODCAST PLAYS
-        </Typography>
-        <Paper sx={{ p: 1, mx: 4, my: 1.7, borderRadius: 100 }}>
+          <Paper
+            sx={{
+              p: { xs: 1, sm: 1.2 },
+              my: { xs: 1.7, sm: 2 },
+              borderRadius: { xs: 100, sm: 1 },
+            }}
+          >
+            <Typography
+              textAlign="center"
+              fontSize={{ xs: 28, sm: 46 }}
+              fontWeight={300}
+            >
+              558
+            </Typography>
+          </Paper>
           <Typography
             textAlign="center"
-            fontSize={{ xs: 28, sm: 48 }}
+            fontSize={{ xs: 18, sm: 25 }}
+            mt={{ xs: 5, sm: 6 }}
             fontWeight={300}
           >
-            5,800
+            TOTAL PODCAST PLAYS
           </Typography>
-        </Paper>
-        <Stack px={{ xs: 4, sm: 8 }} mt={{ xs: 7, sm: 8 }}>
-          <Button
-            variant="text"
-            color="inherit"
-            startIcon={<Podcasts />}
-            sx={{ borderRadius: 100, p: 1.5 }}
-            size="large"
+          <Paper
+            sx={{
+              p: { xs: 1, sm: 1.2 },
+              my: { xs: 1.7, sm: 2 },
+              borderRadius: { xs: 100, sm: 1 },
+            }}
           >
-            Subscribe to Podcast
-          </Button>
-        </Stack>
+            <Typography
+              textAlign="center"
+              fontSize={{ xs: 28, sm: 46 }}
+              fontWeight={300}
+            >
+              5,800
+            </Typography>
+          </Paper>
+          <Stack mt={{ xs: 7, sm: 8 }}>
+            <Button
+              variant="text"
+              color="inherit"
+              startIcon={<Podcasts />}
+              sx={{ borderRadius: { xs: 100, sm: 1 }, p: { xs: 1.5, sm: 2.5 } }}
+              size="large"
+            >
+              Subscribe to Podcast
+            </Button>
+          </Stack>
+        </Box>
       </PageHeader>
       <Container sx={{ p: 0 }}>
         <Container maxWidth="md">
