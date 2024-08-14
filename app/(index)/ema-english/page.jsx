@@ -3,6 +3,7 @@ import { Heading3 } from "@/components/mui-components/Heading3";
 import { PageContent } from "@/components/mui-components/PageContent";
 import { PageHeader } from "@/components/mui-components/PageHeader";
 import { PageImage } from "@/components/mui-components/PageImage";
+import { PageQuote } from "@/components/mui-components/PageQuote";
 import { ParagraphMedium } from "@/components/mui-components/ParagraphMedium";
 import { Podcasts } from "@mui/icons-material";
 import {
@@ -111,13 +112,19 @@ export default function Basketnull() {
             </ParagraphMedium>
             <ParagraphMedium>
               I didn't know what "glitter" meant until I heard Dua Lipa's voice
-              singing, "<i>Glitter</i> in the sky, <i>glitter</i> in our eyes,
-              shining just the way we are." After that, I looked up the meaning
-              of "glitter" once, and it was enough for me to remember it
-              forever! Do you know why I know the meaning of "ambition"? Because
-              "All my friends are toxic, all <i>ambitionless</i>, so rude and
-              always negative!" (this is another song if you haven't figured it
-              out.)
+              singing,{" "}
+              <PageQuote>
+                Glitter in the sky, glitter in our eyes, shining
+                just the way we are.
+              </PageQuote>{" "}
+              After that, I looked up the meaning of "glitter" once, and it was
+              enough for me to remember it forever! Do you know why I know the
+              meaning of "ambition"? Because{" "}
+              <PageQuote>
+                All my friends are toxic, all ambitionless, so rude and
+                always negative!
+              </PageQuote>{" "}
+              (This is another song if you haven't figured it out!)
             </ParagraphMedium>
             <ParagraphMedium>
               EMA English was created in the summer of 2022. We—Ebrahim,
