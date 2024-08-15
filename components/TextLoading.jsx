@@ -1,13 +1,14 @@
 "use client";
 
-import { BeatLoader, PulseLoader, SyncLoader } from "react-spinners";
+import { Box, Typography } from "@mui/material";
+import { PulseLoader } from "react-spinners";
 
-export function TextLoading() {
-  return (
-    <PulseLoader
-      color="gray"
-      size={14}
-      cssOverride={{ textAlign: "center", display:'block' }}
-    />
+export function TextLoading({ loading }) {
+  return loading ? (
+    <PulseLoader color="gray" size={14} />
+  ) : (
+    <Box component="span" color="gray">
+      Unavailable
+    </Box>
   );
 }

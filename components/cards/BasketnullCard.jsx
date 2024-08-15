@@ -50,10 +50,17 @@ export function BasketnullCard({ lang }) {
         </Stack>
       </CardContent>
       <CardActions>
-        <MyCardButton Icon={<SportsEsports />}>
+        <MyCardButton
+          Icon={<SportsEsports />}
+          href="https://basketnull.netlify.app/"
+          newTab
+        >
           {lang === "en" ? "Play the Game" : "همین الان بازی کن"}
         </MyCardButton>
-        <MyCardButton Icon={<CustomReadMoreIcon lang={lang} />}>
+        <MyCardButton
+          Icon={<CustomReadMoreIcon lang={lang} />}
+          href="./basketnull"
+        >
           {lang === "en" ? "Read More" : "بیشتر بخوانید"}
         </MyCardButton>
       </CardActions>

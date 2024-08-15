@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 
 export function EmaInfo() {
   const [info, setInfo] = useState();
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     async function getEmaEnglishInfo() {
@@ -13,7 +14,12 @@ export function EmaInfo() {
 
       const data = await res.json();
 
-      setInfo(data);
+      if (res.ok) {
+        setInfo(data);
+      } else {
+        console.error(data);
+        setError(true);
+      }
     }
 
     getEmaEnglishInfo();
@@ -41,7 +47,7 @@ export function EmaInfo() {
           fontSize={{ xs: 28, sm: 46 }}
           fontWeight={300}
         >
-          {info ? info.subs : <TextLoading />}
+          {info ? info.subs : <TextLoading loading={!error} />}
         </Typography>
       </Paper>
       <Typography
@@ -64,7 +70,7 @@ export function EmaInfo() {
           fontSize={{ xs: 28, sm: 46 }}
           fontWeight={300}
         >
-          {info ? info.plays : <TextLoading />}
+          {info ? info.plays : <TextLoading loading={!error} />}
         </Typography>
       </Paper>
     </div>

@@ -1,4 +1,8 @@
+import { Heading1 } from "@/components/mui-components/Heading1";
+import { Heading3 } from "@/components/mui-components/Heading3";
+import { PageHeader } from "@/components/mui-components/PageHeader";
 import { generateHreflang } from "@/utils/generateHreflang";
+import { Stack } from "@mui/system";
 import Link from "next/link";
 
 export const metadata = {
@@ -11,8 +15,15 @@ export const metadata = {
 export default function Basketnull() {
   return (
     <main>
-      <h1>Basketnull</h1>
-      <Link href="/">Home</Link>
+      <PageHeader>
+        <Stack spacing={3} px={4}>
+          <Heading1>Basketnull</Heading1>
+          <Heading3>
+            Basketnull is a 2D web-based game that I developed using Lua and the
+            Love2D framework.
+          </Heading3>
+        </Stack>
+      </PageHeader>
     </main>
   );
 }

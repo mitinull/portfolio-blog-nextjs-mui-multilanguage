@@ -6,14 +6,10 @@ import { PageImage } from "@/components/mui-components/PageImage";
 import { PageQuote } from "@/components/mui-components/PageQuote";
 import { ParagraphMedium } from "@/components/mui-components/ParagraphMedium";
 import { Podcasts } from "@mui/icons-material";
-import {
-  Box,
-  Button,
-  Container,
-  Stack,
-} from "@mui/material";
+import { Box, Button, Container, Stack } from "@mui/material";
 import Link from "next/link";
 import { EmaInfo } from "./getSubsAndPlays/EmaInfo";
+import { HeaderSpacing } from "@/components/mui-components/HeaderSpacing";
 
 export const metadata = {
   title: "EMA English",
@@ -26,13 +22,13 @@ export default async function Basketnull() {
   return (
     <main>
       <PageHeader>
-        <Stack spacing={{ xs: 3.5, sm: 4.5 }} px={{ xs: 4, sm: 0 }}>
+        <HeaderSpacing vertical>
           <Heading1>EMA English</Heading1>
           <Heading3>
             EMA English is a Persian podcast for learning English with musics,
             songs and lyrics. 🎧📃
           </Heading3>
-        </Stack>
+        </HeaderSpacing>
         <Stack mt={{ xs: 6, sm: 7 }}>
           <PageImage
             alt="EMA English Logo"
@@ -40,7 +36,7 @@ export default async function Basketnull() {
             dark="/images/ema-dark.jpg"
           />
         </Stack>
-        <Box px={{ xs: 4, sm: 0 }}>
+        <HeaderSpacing>
           <EmaInfo />
           <Stack mt={{ xs: 7, sm: 8 }}>
             <Button
@@ -53,7 +49,7 @@ export default async function Basketnull() {
               Subscribe to Podcast
             </Button>
           </Stack>
-        </Box>
+        </HeaderSpacing>
       </PageHeader>
       <Container sx={{ p: 0 }}>
         <Container maxWidth="md">
