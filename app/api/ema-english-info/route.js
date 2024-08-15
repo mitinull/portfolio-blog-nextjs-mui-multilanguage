@@ -8,6 +8,10 @@ export async function GET() {
 
     const data = await res.text();
 
+    if (!res.ok) {
+      throw new Error(res.status);
+    }
+
     const htmlData = parse(data);
 
     const subs = htmlData

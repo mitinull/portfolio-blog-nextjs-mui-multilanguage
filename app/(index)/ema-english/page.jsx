@@ -8,8 +8,9 @@ import { ParagraphMedium } from "@/components/mui-components/ParagraphMedium";
 import { Podcasts } from "@mui/icons-material";
 import { Box, Button, Container, Stack } from "@mui/material";
 import Link from "next/link";
-import { EmaInfo } from "./getSubsAndPlays/EmaInfo";
+import { EmaInfo } from "./ema-info/EmaInfo";
 import { HeaderSpacing } from "@/components/mui-components/HeaderSpacing";
+import { HeaderButton } from "@/components/mui-components/HeaderButton";
 
 export const metadata = {
   title: "EMA English",
@@ -39,15 +40,7 @@ export default async function Basketnull() {
         <HeaderSpacing>
           <EmaInfo />
           <Stack mt={{ xs: 7, sm: 8 }}>
-            <Button
-              variant="text"
-              color="inherit"
-              startIcon={<Podcasts />}
-              sx={{ borderRadius: { xs: 100, sm: 1 }, p: { xs: 1.5, sm: 2.5 } }}
-              size="large"
-            >
-              Subscribe to Podcast
-            </Button>
+            <HeaderButton Icon={Podcasts}>Subscribe to Podcast</HeaderButton>
           </Stack>
         </HeaderSpacing>
       </PageHeader>

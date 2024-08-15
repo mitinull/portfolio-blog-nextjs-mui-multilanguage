@@ -3,7 +3,7 @@
 import { Box, Typography } from "@mui/material";
 import { PulseLoader } from "react-spinners";
 
-export function TextLoading({ loading }) {
+export function TextLoading({ loading = true }) {
   return loading ? (
     <PulseLoader color="gray" size={14} />
   ) : (
