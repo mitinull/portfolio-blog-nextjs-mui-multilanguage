@@ -9,7 +9,7 @@ export function BasketnullStars() {
   useEffect(() => {
     async function getStars() {
       try {
-        await new Promise((resolve) => setTimeout(resolve, 3000));
+        // await new Promise((resolve) => setTimeout(resolve, 3000));
 
         const res = await fetch(
           "https://api.github.com/repos/mitinull/basketnull"
