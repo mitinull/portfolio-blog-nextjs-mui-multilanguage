@@ -40,20 +40,20 @@ export default function Basketnull() {
           />
         </Stack>
         <HeaderSpacing>
-          <Stack mt={6}>
+          <Stack mt={{ xs: 6, sm: 9 }}>
             <HeaderButton Icon={SportsEsports} endIcon outlined>
               Play the Game
             </HeaderButton>
           </Stack>
-          <Stack mt={{ xs: 6, sm: 5 }} spacing={2.5} mb={2}>
+          <Stack mt={{ xs: 6, sm: 10 }} spacing={2.5} mb={2}>
             <Heading3>
               Basketnull is an open source game. You can visit the code and add
               new levels if you're interested.
             </Heading3>
           </Stack>
-          
-          <Stack mt={{ xs: 4, sm: 6 }}>
-            <HeaderTextCenter>
+
+          <Stack mt={{ xs: 4, sm: 7 }} spacing={{ sm: 3 }}>
+            <HeaderTextCenter fontSize={{ xs: 19.5, sm: 27 }}>
               <Box
                 component="span"
                 sx={{
@@ -72,10 +72,8 @@ export default function Basketnull() {
               <BasketnullStars />
             </HeaderPaper>
           </Stack>
-          <Stack mt={4} mb={2}>
-            <HeaderButton Icon={GitHub}>
-              Visit GitHub Repository
-            </HeaderButton>
+          <Stack mt={{ xs: 4, sm: 8 }} mb={2}>
+            <HeaderButton Icon={GitHub}>Visit GitHub Repository</HeaderButton>
           </Stack>
         </HeaderSpacing>
       </PageHeader>
