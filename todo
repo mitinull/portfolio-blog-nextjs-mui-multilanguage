@@ -10,7 +10,9 @@
 + adding cards to persian page
 + changing selection colors for both themes
 + style ema-english page
-- add some pages
++ add some pages
+- adding persian pages
+- adding link between persian and english page
 - improving ema-english page content
 - fixing SwitchThemeButton flickering
 - fixing different card heights
