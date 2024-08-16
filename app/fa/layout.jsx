@@ -7,7 +7,6 @@ export default function FaLayout({ children }) {
     <html lang="fa-IR" dir="rtl" suppressHydrationWarning>
       <body className={vazir.className}>
         <Providers>
-          <h3>FaLayout</h3>
           {children}
         </Providers>
       </body>

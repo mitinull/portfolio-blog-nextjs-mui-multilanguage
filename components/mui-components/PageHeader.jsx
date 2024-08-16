@@ -7,7 +7,7 @@ export function PageHeader({ color, children }) {
       icon={false}
       sx={{
         px: { xs: 0, sm: 2 },
-        pt: { xs: 6.5, sm: 12 },
+        pt: { xs: 5, sm: 12 },
         pb: { xs: 5, sm: 9 },
         display: "flex",
         justifyContent: "center",

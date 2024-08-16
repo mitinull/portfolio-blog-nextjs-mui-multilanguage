@@ -6,18 +6,19 @@ import InitColorSchemeScript from "@mui/material/InitColorSchemeScript";
 import {
   experimental_extendTheme as extendTheme,
   Experimental_CssVarsProvider as CssVarsProvider,
+  styled,
 } from "@mui/material/styles";
 import { prefixer } from "stylis";
 import stylisRTLPlugin from "stylis-plugin-rtl";
 
-const cacheRtl = createCache({
+export const ltrCache = createCache({
+  key: "mui",
+});
+
+export const rtlCache = createCache({
   key: "muirtl",
   stylisPlugins: [prefixer, stylisRTLPlugin],
 });
-
-function Rtl(props) {
-  return <CacheProvider value={cacheRtl}>{props.children}</CacheProvider>;
-}
 
 export function Providers({ children, direction }) {
   const theme = extendTheme({
@@ -35,7 +36,9 @@ export function Providers({ children, direction }) {
     <>
       <InitColorSchemeScript defaultMode="dark" />
       <CssVarsProvider theme={theme} defaultMode="dark">
-        {direction === "ltr" ? children : <Rtl>{children}</Rtl>}
+        <CacheProvider value={direction === "ltr" ? ltrCache : rtlCache}>
+          {children}
+        </CacheProvider>
       </CssVarsProvider>
     </>
   );

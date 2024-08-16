@@ -1,9 +1,10 @@
 "use client";
 
 import { TextLoading } from "@/components/TextLoading";
+import { numberToPersian } from "@/utils/numberToPersian";
 import { useEffect, useState } from "react";
 
-export function BasketnullStars() {
+export function BasketnullStars({ en }) {
   const [stars, setStars] = useState();
 
   useEffect(() => {
@@ -23,9 +24,9 @@ export function BasketnullStars() {
 
         const stars_count = data["stargazers_count"];
 
-        setStars(stars_count);
+        setStars(en ? stars_count : numberToPersian(stars_count));
       } catch (err) {
-        setStars("Unavailable");
+        setStars(en ? "Unavailable" : "نامشخص");
         console.error(err);
       }
     }
