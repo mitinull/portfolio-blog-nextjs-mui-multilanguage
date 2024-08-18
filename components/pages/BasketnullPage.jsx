@@ -76,7 +76,7 @@ export function BasketnullPage({ lang }) {
           </Stack>
           <Stack mt={{ xs: 4, sm: 8 }} mb={2}>
             <HeaderButton Icon={GitHub}>
-              {en ? "Visit GitHub Repository" : "بازدید از صفحه گیت‌هاب"}
+              {en ? "Visit the GitHub Repo" : "بازدید از صفحه گیت‌هاب"}
             </HeaderButton>
           </Stack>
         </HeaderSpacing>

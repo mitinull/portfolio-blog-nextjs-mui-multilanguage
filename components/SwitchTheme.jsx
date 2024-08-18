@@ -1,27 +1,20 @@
 "use client";
 
 import { Button, useColorScheme } from "@mui/material";
-import { useEffect, useState } from "react";
 
 export function SwitchTheme() {
-  const { mode, setMode } = useColorScheme();
+  const { colorScheme, setColorScheme } = useColorScheme();
 
-  const alternateTheme = mode === "light" ? "dark" : "light";
-
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
-
-  if (!mounted) {
-    return null;
-  }
+  const alternativeScheme = colorScheme === "light" ? "dark" : "light";
 
   return (
     <Button
       onClick={() => {
-        setMode(alternateTheme);
+        setColorScheme(alternativeScheme);
       }}
     >
-      {alternateTheme}
+      <span className="img-dark">Light</span>
+      <span className="img-light">Dark</span>
     </Button>
   );
 }

@@ -14,11 +14,12 @@
 + adding a persian page
 + adding link between persian and english page
 + adding back to homepage button in layout
-- fixing SwitchThemeButton flickering
++ fixing SwitchThemeButton flickering
 - adding header
 - improving SwitchThemeButton
 - adding footer
 - improving ema-english page content
+- improving desktop styles (making text smaller)
 - fixing different card heights
 - lazy blurry loading for images (cards and page)
 - changing card's justify text?
