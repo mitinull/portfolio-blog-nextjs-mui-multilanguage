@@ -5,7 +5,7 @@ import { PageHeader } from "@/components/mui-components/PageHeader";
 import { PageImage } from "@/components/mui-components/PageImage";
 import { PageQuote } from "@/components/mui-components/PageQuote";
 import { ParagraphMedium } from "@/components/mui-components/ParagraphMedium";
-import { Podcasts } from "@mui/icons-material";
+import { Home, Podcasts } from "@mui/icons-material";
 import { Box, Button, Container, Stack } from "@mui/material";
 import Link from "next/link";
 import { EmaInfo } from "./ema-info/EmaInfo";
@@ -95,7 +95,6 @@ export default async function Basketnull() {
             </ParagraphMedium>
           </PageContent>
         </Container>
-        <Link href="/">Home</Link>
       </Container>
     </main>
   );

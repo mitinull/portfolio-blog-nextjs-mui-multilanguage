@@ -1,5 +1,4 @@
 import "../globals.css";
-import { HREFLANG_PATHS } from "../../utils/constants";
 import { roboto } from "@/utils/fonts";
 import { Providers } from "@/utils/providers";
 
