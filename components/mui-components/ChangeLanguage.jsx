@@ -27,6 +27,7 @@ export function ChangeLanguage({ en, href }) {
         sx={{
           ":hover": { cursor: "pointer" },
           fontFamily: vazir.style.fontFamily,
+          py: { xs: 1, sm: 2 },
         }}
       >
         {en
