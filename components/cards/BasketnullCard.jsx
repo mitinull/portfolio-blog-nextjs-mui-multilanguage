@@ -43,7 +43,7 @@ export function BasketnullCard({ lang }) {
         </MyCardBody>
         <Stack direction="row" mt={2}>
           <Chip
-            label={lang === "en" ? "Game" : "بازی سازی"}
+            label={lang === "en" ? "Game Dev" : "بازی سازی"}
             size="small"
             variant="outlined"
           />
