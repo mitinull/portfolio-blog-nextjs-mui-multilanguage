@@ -35,9 +35,6 @@ export default function Home() {
 
   return (
     <main>
-      <SwitchTheme />
-      <Link href="/">English</Link>
-
       <PostsContainer>
         <PostWrapper>
           <BasketnullCard lang={lang} />

@@ -9,6 +9,7 @@ export function SwitchTheme() {
 
   return (
     <Button
+      sx={{ p: 0 }}
       onClick={() => {
         setColorScheme(alternativeScheme);
       }}

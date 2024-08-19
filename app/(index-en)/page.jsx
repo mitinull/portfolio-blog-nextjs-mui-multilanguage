@@ -33,12 +33,6 @@ export default function Home() {
 
   return (
     <main>
-      <SwitchTheme />
-
-      <Link href="/fa" className={vazir.className}>
-        فارسی
-      </Link>
-
       <PostsContainer>
         <PostWrapper>
           <BasketnullCard lang={lang} />
