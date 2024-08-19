@@ -1,8 +1,8 @@
-
 import { MyAppBar } from "@/components/mui-components/MyAppBar";
 import "../globals.css";
 import { vazir } from "@/utils/fonts";
 import { Providers } from "@/utils/providers";
+import { MadeBy } from "@/components/MadeBy";
 
 export default function FaLayout({ children }) {
   return (
@@ -11,6 +11,7 @@ export default function FaLayout({ children }) {
         <Providers>
           <MyAppBar lang="fa" />
           {children}
+          <MadeBy lang="fa" />
         </Providers>
       </body>
     </html>

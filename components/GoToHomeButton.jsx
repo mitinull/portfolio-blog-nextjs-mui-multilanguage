@@ -9,7 +9,7 @@ export function GoToHomeButton({ lang }) {
       href={lang === "en" ? "/" : "/fa"}
       fullWidth
       startIcon={<Home />}
-      sx={{ borderRadius: 0, p: 3.5, pb: 3.5 }}
+      sx={{ borderRadius: 0, p: 3.5, pb: 3.5, my: 4 }}
     >
       {lang === "en" ? "Go to Homepage" : "برو به صفحهٔ اصلی"}
     </Button>

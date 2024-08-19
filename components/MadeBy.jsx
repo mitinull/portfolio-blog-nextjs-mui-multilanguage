@@ -1,0 +1,42 @@
+import { Box, Typography } from "@mui/material";
+import Link from "next/link";
+
+export function MadeBy({ lang }) {
+  return (
+    <Box
+      bgcolor="footer.bg"
+      py={1}
+      px={2}
+      mt="auto"
+      component="footer"
+    >
+      <Typography textAlign="center" variant="subtitle2" fontWeight={300}>
+        {lang === "en" ? (
+          <>
+            Made by <Link href="https://github.com/mitinull">Mitinull</Link>{" "}
+            with ❤️, 💚, and 💙.
+            <Box
+              component="span"
+              sx={{ display: { xs: "none", sm: "inline" } }}
+            >
+              {" "}
+              You can create other colors with RGB.
+            </Box>
+          </>
+        ) : (
+          <>
+            طراحی توسط <Link href="https://github.com/mitinull">میتینال</Link>{" "}
+            به همراه ❤️، 💚 و 💙.
+            <Box
+              component="span"
+              sx={{ display: { xs: "none", sm: "inline" } }}
+            >
+              {" "}
+              با این سه رنگ می‌توانید بقیه رنگ‌ها را بسازید.
+            </Box>
+          </>
+        )}
+      </Typography>
+    </Box>
+  );
+}

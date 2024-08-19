@@ -24,6 +24,23 @@ export function Providers({ children, direction }) {
   const theme = extendTheme({
     direction: direction,
 
+    colorSchemes: {
+      light: {
+        palette: {
+          footer: {
+            bg: "#d9d9d9",
+          },
+        },
+      },
+      dark: {
+        palette: {
+          footer: {
+            bg: "#000",
+          },
+        },
+      },
+    },
+
     typography: {
       fontFamily: "inherit",
       button: {

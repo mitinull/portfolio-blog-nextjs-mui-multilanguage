@@ -15,9 +15,11 @@
 + adding link between persian and english page
 + adding back to homepage button in layout
 + fixing SwitchThemeButton flickering
-- adding header
++ adding header
++ adding footer
 - improving SwitchThemeButton
-- adding footer
+- fixing and improving header (light/dark) (fa/en)
+- making header scrollable
 - improving ema-english page content
 - improving desktop styles (making text smaller)
 - fixing different card heights
@@ -25,3 +27,5 @@
 - changing card's justify text?
 - improving cards style
 - implementing filter with tags
+- fix and improve 404 page
+- fixing tab title and description for persian
