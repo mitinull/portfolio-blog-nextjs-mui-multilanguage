@@ -51,8 +51,8 @@ export function Providers({ children, direction }) {
 
   return (
     <>
-      <InitColorSchemeScript defaultMode="dark" />
-      <CssVarsProvider theme={theme} defaultMode="dark">
+      <InitColorSchemeScript defaultMode="system" />
+      <CssVarsProvider theme={theme} defaultMode="system">
         <CacheProvider value={direction === "ltr" ? ltrCache : rtlCache}>
           {children}
         </CacheProvider>
