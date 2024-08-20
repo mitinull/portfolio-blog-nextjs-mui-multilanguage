@@ -43,7 +43,7 @@ export function EmaEnglishCard({ lang }) {
         </MyCardBody>
         <Stack direction="row" mt={2}>
           <Chip
-            label={lang === "en" ? "content" : "تولید محتوا"}
+            label={lang === "en" ? "Content" : "تولید محتوا"}
             size="small"
             variant="outlined"
           />
