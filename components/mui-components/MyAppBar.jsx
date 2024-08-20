@@ -28,6 +28,7 @@ export function MyAppBar({ lang }) {
           height: "100%",
           width: "100%",
           position: "absolute",
+          scale: en ? 1 : "-1 1",
         }}
       />
       <Toolbar
@@ -39,7 +40,12 @@ export function MyAppBar({ lang }) {
         }}
       >
         <Link href={en ? "/" : "/fa"} style={{ opacity: 0.9, display: "flex" }}>
-          <img src="/images/icon-dark.svg" alt="bicycle logo" width={35} />
+          <img
+            src="/images/icon-dark.svg"
+            alt="bicycle logo"
+            width={35}
+            style={{ scale: en ? "1" : "-1 1" }}
+          />
           <Typography
             variant="h4"
             component="div"
@@ -52,7 +58,7 @@ export function MyAppBar({ lang }) {
               color: "white",
             }}
           >
-            Mitinull
+            {en ? "Mitinull" : "مـیتینـال"}
           </Typography>
         </Link>
         <Box mr="auto" />
