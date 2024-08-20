@@ -19,6 +19,7 @@ export function MyAppBar({ lang }) {
 
   return (
     <AppBar
+      elevation={2}
       position="sticky"
       sx={{
         overflow: "hidden",
