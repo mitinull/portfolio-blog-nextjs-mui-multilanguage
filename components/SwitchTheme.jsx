@@ -21,7 +21,7 @@ export const MuiThemeSwitch = styled(Switch)(({ theme }) => ({
       },
       "& + .MuiSwitch-track": {
         opacity: 1,
-        backgroundColor: theme.palette.mode === "dark" ? "#8796A5" : "#aab4be",
+        backgroundColor: theme.palette.mode === "dark" ? "#677685" : "#dae4ee",
       },
     },
   },
@@ -45,7 +45,7 @@ export const MuiThemeSwitch = styled(Switch)(({ theme }) => ({
   },
   "& .MuiSwitch-track": {
     opacity: 1,
-    backgroundColor: theme.palette.mode === "dark" ? "#8796A5" : "#aab4be",
+    backgroundColor: theme.palette.mode === "dark" ? "#677685" : "#dae4ee",
     borderRadius: 20 / 2,
   },
 }));
