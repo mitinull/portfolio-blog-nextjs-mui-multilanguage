@@ -16,7 +16,9 @@ export function BasketnullPage({ lang }) {
   const en = lang === "en";
   return (
     <main>
-      <ChangeLanguage en={!en} href={en ? "/fa/basketnull" : "/basketnull"} />
+      {en && (
+        <ChangeLanguage en={!en} href={en ? "/fa/basketnull" : "/basketnull"} />
+      )}
       <PageHeader>
         <HeaderSpacing vertical>
           <Heading1>{en ? "Basketnull" : "بسکتنال"}</Heading1>
