@@ -2,10 +2,11 @@ import { roboto, vazir } from "@/utils/fonts";
 import { AppBar, Box, Button, Stack, Toolbar, Typography } from "@mui/material";
 import Link from "next/link";
 import { SwitchTheme } from "../SwitchTheme";
-import Image from "next/image";
+import { SwitchLanguage } from "../SwitchLanguage";
 
 export function MyAppBar({ lang }) {
   const en = lang === "en";
+
   return (
     <AppBar
       position="sticky"
@@ -31,6 +32,7 @@ export function MyAppBar({ lang }) {
           scale: en ? 1 : "-1 1",
         }}
       />
+
       <Toolbar
         sx={{
           py: { xs: 2.5, sm: 3.5 },
@@ -61,22 +63,10 @@ export function MyAppBar({ lang }) {
             {en ? "Mitinull" : "مـیتینـال"}
           </Typography>
         </Link>
+
         <Box mr="auto" />
 
-        <Button
-          LinkComponent={Link}
-          href={en ? "/fa" : "/"}
-          color="inherit"
-          sx={{
-            m: 0,
-            fontFamily: en ? vazir.style.fontFamily : roboto.style.fontFamily,
-            fontSize: 16,
-            fontWeight: 300,
-          }}
-        >
-          {en ? "فارسی" : "English"}
-        </Button>
-
+        <SwitchLanguage en={en} />
         <SwitchTheme />
       </Toolbar>
     </AppBar>

@@ -18,8 +18,12 @@
 + adding header
 + adding footer
 + improving SwitchThemeButton
-- fixing and improving header (light/dark) (fa/en)
++ fixing and improving header (fa/en)
+- fixing and improving header (light/dark)
+- adding persian for ema-english
 - improving ema-english page content
+- adding Aparat iframe to persian basketnull
+- adding short gameplay to english basketnull
 - improving desktop styles (making text smaller)
 - fixing different card heights
 - lazy blurry loading for images (cards and page)
