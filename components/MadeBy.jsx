@@ -20,19 +20,19 @@ export function MadeBy({ lang }) {
               sx={{ display: { xs: "none", sm: "inline" } }}
             >
               {" "}
-              You can create other colors with RGB.
+              You can create other hearts with RGB.
             </Box>
           </>
         ) : (
           <>
             طراحی توسط <Link href="https://github.com/mitinull">میتینال</Link>{" "}
-            به همراه ❤️، 💚 و 💙.
+            با ❤️، 💚 و 💙.
             <Box
               component="span"
               sx={{ display: { xs: "none", sm: "inline" } }}
             >
               {" "}
-              با این سه رنگ می‌توانید بقیه رنگ‌ها را بسازید.
+              با ترکیب این سه رنگ می‌توانید بقیه قلب‌ها را بسازید.
             </Box>
           </>
         )}
