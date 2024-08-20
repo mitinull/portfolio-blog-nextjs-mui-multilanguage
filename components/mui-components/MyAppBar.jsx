@@ -1,5 +1,5 @@
-import { vazir } from "@/utils/fonts";
-import { AppBar, Box, Stack, Toolbar, Typography } from "@mui/material";
+import { roboto, vazir } from "@/utils/fonts";
+import { AppBar, Box, Button, Stack, Toolbar, Typography } from "@mui/material";
 import Link from "next/link";
 import { SwitchTheme } from "../SwitchTheme";
 import Image from "next/image";
@@ -35,6 +35,7 @@ export function MyAppBar({ lang }) {
           py: { xs: 2.5, sm: 3.5 },
           alignItems: "center",
           px: { xs: 2.2, sm: 5.5 },
+          gap: { xs: 1, sm: 2 },
         }}
       >
         <Link href={en ? "/" : "/fa"} style={{ opacity: 0.9, display: "flex" }}>
@@ -55,14 +56,22 @@ export function MyAppBar({ lang }) {
           </Typography>
         </Link>
         <Box mr="auto" />
+
+        <Button
+          LinkComponent={Link}
+          href={en ? "/fa" : "/"}
+          color="inherit"
+          sx={{
+            m: 0,
+            fontFamily: en ? vazir.style.fontFamily : roboto.style.fontFamily,
+            fontSize: 16,
+            fontWeight: 300,
+          }}
+        >
+          {en ? "فارسی" : "English"}
+        </Button>
+
         <SwitchTheme />
-        {en ? (
-          <Link href="/fa" className={vazir.className}>
-            فارسی
-          </Link>
-        ) : (
-          <Link href="/">English</Link>
-        )}
       </Toolbar>
     </AppBar>
   );

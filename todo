@@ -17,9 +17,8 @@
 + fixing SwitchThemeButton flickering
 + adding header
 + adding footer
-- improving SwitchThemeButton
++ improving SwitchThemeButton
 - fixing and improving header (light/dark) (fa/en)
-- making header scrollable
 - improving ema-english page content
 - improving desktop styles (making text smaller)
 - fixing different card heights
@@ -29,3 +28,4 @@
 - implementing filter with tags
 - fix and improve 404 page
 - fixing tab title and description for persian
+- making header scrollable
