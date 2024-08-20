@@ -13,7 +13,7 @@ export function PageHeader({ color, children }) {
         justifyContent: "center",
         borderRadius: 0,
         borderBottom: 1,
-        borderColor: "#8884",
+        borderColor: "#fff2",
       }}
     >
       <Container sx={{ px: { xs: 0, sm: 8 } }}>{children}</Container>

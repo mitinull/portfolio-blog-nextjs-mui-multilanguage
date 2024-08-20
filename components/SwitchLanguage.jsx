@@ -18,13 +18,14 @@ export function SwitchLanguage({ en }) {
 
   return (
     <Button
-      color="inherit"
+      // color="footer.bg"
       onClick={handleClick}
       sx={{
         m: 0,
         fontFamily: en ? vazir.style.fontFamily : roboto.style.fontFamily,
         fontSize: 16,
-        fontWeight: 300,
+        fontWeight: { xs: 300, sm: 400 },
+        color: "text.primary",
       }}
     >
       {en ? "فارسی" : "English"}

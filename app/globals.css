@@ -1,9 +1,11 @@
 [data-mui-color-scheme="light"] {
   color-scheme: light;
+  --theme-color: white;
 }
 
 [data-mui-color-scheme="dark"] {
   color-scheme: dark;
+  --theme-color: black;
 }
 
 [data-mui-color-scheme="light"] .img-dark {

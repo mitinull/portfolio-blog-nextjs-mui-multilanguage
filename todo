@@ -19,7 +19,7 @@
 + adding footer
 + improving SwitchThemeButton
 + fixing and improving header (fa/en)
-- fixing and improving header (light/dark)
++ fixing and improving header (light/dark)
 - adding persian for ema-english
 - improving ema-english page content
 - adding Aparat iframe to persian basketnull
@@ -32,4 +32,5 @@
 - implementing filter with tags
 - fix and improve 404 page
 - fixing tab title and description for persian
+- changing font of mitinull in AppBar (header)
 - making header scrollable
