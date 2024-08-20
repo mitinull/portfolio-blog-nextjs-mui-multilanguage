@@ -39,7 +39,7 @@ export function EmaEnglishCard({ lang }) {
              If you enjoy our podcast, feel free to subscribe.`
             : `اِما انگلیش (EMA English) یک پادکست فارسیه
             برای یادگیری زبان انگلیسی به همراه ترانه و موسیقی‌.
-            اگر دوست داشتید می‌توانید پادکست ما رو دنبال کنید.`}
+            اگر دوست داشتید می‌تونید پادکست ما رو دنبال کنید.`}
         </MyCardBody>
         <Stack direction="row" mt={2}>
           <Chip
