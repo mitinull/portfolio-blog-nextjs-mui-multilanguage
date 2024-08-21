@@ -120,6 +120,39 @@ export function BasketnullPage({ lang }) {
           </Box>
         </>
       )}
+      {en && (
+        <>
+          <Container maxWidth="md">
+            <PageContent>
+              <ParagraphMedium>
+                📺 Watch a Short Gameplay:
+              </ParagraphMedium>
+            </PageContent>
+          </Container>
+          <Stack mx={2}>
+            <Stack
+              width="100%"
+              maxWidth={1000}
+              mt={5}
+              mx="auto"
+              borderRadius={2}
+              alignItems="center"
+              overflow="hidden"
+            >
+              <video
+                width="1920"
+                height="1080"
+                controls
+                // preload="none"
+                style={{ width: "100%", height: "auto" }}
+              >
+                <source src="/videos/Basketnull2size2.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </Stack>
+          </Stack>
+        </>
+      )}
     </main>
   );
 }
