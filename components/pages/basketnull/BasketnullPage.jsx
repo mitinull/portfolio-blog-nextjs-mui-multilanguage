@@ -2,7 +2,6 @@ import { Heading1 } from "@/components/mui-components/Heading1";
 import { Heading3 } from "@/components/mui-components/Heading3";
 import { PageHeader } from "@/components/mui-components/PageHeader";
 import { Stack } from "@mui/system";
-import { BasketnullStars } from "./page-utils/basketnull-stars";
 import { HeaderPaper } from "@/components/mui-components/HeaderPaper";
 import { HeaderSpacing } from "@/components/mui-components/HeaderSpacing";
 import { HeaderTextCenter } from "@/components/mui-components/HeaderTextCenter";
@@ -10,10 +9,12 @@ import { GitHub } from "@mui/icons-material";
 import { Box } from "@mui/material";
 import { HeaderButton } from "@/components/mui-components/HeaderButton";
 import { PageImage } from "@/components/mui-components/PageImage";
-import { ChangeLanguage } from "../mui-components/ChangeLanguage";
+import { ChangeLanguage } from "@/components/mui-components/ChangeLanguage";
+import { BasketnullStars } from "./BasketnullStars";
 
 export function BasketnullPage({ lang }) {
   const en = lang === "en";
+
   return (
     <main>
       {en && (

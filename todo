@@ -25,13 +25,14 @@
 - improving ema-english page content
 - adding Aparat iframe to persian basketnull
 - adding short gameplay to english basketnull
+- improving meta tags
 - improving desktop styles (making text smaller)
 - fixing different card heights
 - lazy blurry loading for images (cards and page)
 - changing card's justify text?
 - improving cards style
-- implementing filter with tags
 - fix and improve 404 page
 - fixing tab title and description for persian
 - changing font of mitinull in AppBar (header)
 - making header scrollable
+- implementing filter with tags

@@ -1,4 +1,4 @@
-import { BasketnullPage } from "@/components/pages/BasketnullPage";
+import { BasketnullPage } from "@/components/pages/basketnull/BasketnullPage";
 import { generateHreflang } from "@/utils/generateHreflang";
 
 export const metadata = {

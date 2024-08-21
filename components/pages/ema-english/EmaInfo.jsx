@@ -3,7 +3,7 @@
 import { HeaderPaper } from "@/components/mui-components/HeaderPaper";
 import { HeaderTextCenter } from "@/components/mui-components/HeaderTextCenter";
 import { TextLoading } from "@/components/TextLoading";
-import { Paper, Stack, Typography } from "@mui/material";
+import { Stack } from "@mui/material";
 import { useEffect, useState } from "react";
 
 export function EmaInfo() {

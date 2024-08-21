@@ -5,9 +5,9 @@ export const metadata = {
   title: "EMA English",
   description: "EMA English is a persian podcast.",
 
-  ...generateHreflang("ema-english", "en"),
+  ...generateHreflang("ema-english", "fa"),
 };
 
-export default async function Basketnull() {
-  return <EmaEnglishPage lang="en" />;
+export default function EmaEnglish() {
+  return <EmaEnglishPage lang="fa" />;
 }
