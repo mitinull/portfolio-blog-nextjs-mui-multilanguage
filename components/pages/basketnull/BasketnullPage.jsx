@@ -6,11 +6,14 @@ import { HeaderPaper } from "@/components/mui-components/HeaderPaper";
 import { HeaderSpacing } from "@/components/mui-components/HeaderSpacing";
 import { HeaderTextCenter } from "@/components/mui-components/HeaderTextCenter";
 import { GitHub } from "@mui/icons-material";
-import { Box } from "@mui/material";
+import { Box, Container } from "@mui/material";
 import { HeaderButton } from "@/components/mui-components/HeaderButton";
 import { PageImage } from "@/components/mui-components/PageImage";
 import { ChangeLanguage } from "@/components/mui-components/ChangeLanguage";
 import { BasketnullStars } from "./BasketnullStars";
+import { PageContent } from "@/components/mui-components/PageContent";
+import { ParagraphMedium } from "@/components/mui-components/ParagraphMedium";
+import { AparatBasketnull } from "./AparatBasketnull";
 
 export function BasketnullPage({ lang }) {
   const en = lang === "en";
@@ -43,7 +46,11 @@ export function BasketnullPage({ lang }) {
         </Stack>
         <HeaderSpacing>
           <Stack mt={{ xs: 6, sm: 9 }}>
-            <HeaderButton outlined>
+            <HeaderButton
+              outlined
+              href="https://basketnull.netlify.app/"
+              target="_blank"
+            >
               {en ? "Play the Game" : "اجرای بازی بسکتنال"}
             </HeaderButton>
           </Stack>
@@ -78,12 +85,41 @@ export function BasketnullPage({ lang }) {
             </HeaderPaper>
           </Stack>
           <Stack mt={{ xs: 4, sm: 8 }} mb={2}>
-            <HeaderButton Icon={GitHub}>
+            <HeaderButton
+              Icon={GitHub}
+              href="https://github.com/mitinull/basketnull"
+              target="_blank"
+            >
               {en ? "Visit the GitHub Repo" : "بازدید از صفحه گیت‌هاب"}
             </HeaderButton>
           </Stack>
         </HeaderSpacing>
       </PageHeader>
+      {!en && (
+        <>
+          <Container maxWidth="md">
+            <PageContent>
+              <ParagraphMedium>
+                📺 آموزش ویدیویی اضافه کردن مرحله به بازی بسکتنال:
+              </ParagraphMedium>
+            </PageContent>
+          </Container>
+          <Box px={2}>
+            <Stack
+              mt={5}
+              mx="auto"
+              borderRadius={2}
+              overflow="hidden"
+              // border={1}
+              borderColor="#444"
+              boxShadow={2}
+              maxWidth={1000}
+            >
+              <AparatBasketnull />
+            </Stack>
+          </Box>
+        </>
+      )}
     </main>
   );
 }
