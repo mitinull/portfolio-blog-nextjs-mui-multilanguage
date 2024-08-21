@@ -1,6 +1,6 @@
 import { Button } from "@mui/material";
 
-export function HeaderButton({ children, Icon, endIcon, outlined }) {
+export function HeaderButton({ children, Icon, endIcon, outlined, ...other }) {
   return (
     <Button
       variant={outlined ? "outlined" : "text"}
@@ -13,6 +13,7 @@ export function HeaderButton({ children, Icon, endIcon, outlined }) {
         fontWeight: { xs: 400 },
       }}
       size="large"
+      {...other}
     >
       {Icon && <Icon sx={{ fontSize: { xs: 20, sm: 32 } }} />}
       {children}

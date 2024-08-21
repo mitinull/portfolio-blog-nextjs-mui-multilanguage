@@ -5,8 +5,8 @@ import { PageHeader } from "@/components/mui-components/PageHeader";
 import { PageImage } from "@/components/mui-components/PageImage";
 import { PageQuote } from "@/components/mui-components/PageQuote";
 import { ParagraphMedium } from "@/components/mui-components/ParagraphMedium";
-import { Podcasts } from "@mui/icons-material";
-import { Container, Stack } from "@mui/material";
+import { Podcasts, Telegram } from "@mui/icons-material";
+import { Button, Container, Stack } from "@mui/material";
 import { EmaInfo } from "./EmaInfo";
 import { HeaderSpacing } from "@/components/mui-components/HeaderSpacing";
 import { HeaderButton } from "@/components/mui-components/HeaderButton";
@@ -43,7 +43,11 @@ export function EmaEnglishPage({ lang }) {
         <HeaderSpacing>
           <EmaInfo en={en} />
           <Stack mt={{ xs: 7, sm: 8 }}>
-            <HeaderButton Icon={Podcasts}>
+            <HeaderButton
+              Icon={Podcasts}
+              href="https://castbox.fm/channel/id5058728?utm_source=website&utm_medium=dlink&utm_campaign=web_share&utm_content=EMA%20English%20%7C%20English%20Music%20%7C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%20%D8%B2%D8%A8%D8%A7%D9%86"
+              target="_blank"
+            >
               {en ? <>Subscribe to Podcast</> : <>دنبال کردن پادکست</>}
             </HeaderButton>
           </Stack>
@@ -96,11 +100,33 @@ export function EmaEnglishPage({ lang }) {
               podcast!
             </ParagraphMedium>
             <ParagraphMedium enInFa={lang === "fa"}>
-              You can subscribe to the Persian podcast EMA English on Castbox,
-              follow our Telegram channel (@emaEnglish), or listen to episodes
-              on the EMA English page on Castbox. Thanks for reading, and I hope
-              there will be glitter in your eyes! ✨👀
+              You can listen to the Persian podcast EMA English on Castbox or
+              via our Telegram channel (t.me/emaEnglish). Thanks for reading,
+              and I hope there will be glitter in your eyes! ✨👀
             </ParagraphMedium>
+            <Stack spacing={3.5} pt={3}>
+              <Button
+                variant="outlined"
+                color="warning"
+                startIcon={<Podcasts />}
+                href="https://castbox.fm/channel/id5058728?utm_source=website&utm_medium=dlink&utm_campaign=web_share&utm_content=EMA%20English%20%7C%20English%20Music%20%7C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%20%D8%B2%D8%A8%D8%A7%D9%86"
+                target="_blank"
+              >
+                {en ? (
+                  <>EMA English on Castbox</>
+                ) : (
+                  <>اِما انگلیش در کست‌باکس</>
+                )}
+              </Button>
+              <Button
+                variant="outlined"
+                startIcon={<Telegram />}
+                href="https://t.me/emaEnglish"
+                target="_blank"
+              >
+                {en ? <>Visit Telegram Channel</> : <>رفتن به کانال تلگرام</>}
+              </Button>
+            </Stack>
           </PageContent>
         </Container>
       </Container>
