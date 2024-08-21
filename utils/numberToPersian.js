@@ -10,6 +10,7 @@ export function numberToPersian(number) {
     7: "۷",
     8: "۸",
     9: "۹",
+    ",": "٬",
   };
   number = number.toString().split("");
   let persianNumber = "";

@@ -3,10 +3,11 @@
 import { HeaderPaper } from "@/components/mui-components/HeaderPaper";
 import { HeaderTextCenter } from "@/components/mui-components/HeaderTextCenter";
 import { TextLoading } from "@/components/TextLoading";
+import { numberToPersian } from "@/utils/numberToPersian";
 import { Stack } from "@mui/material";
 import { useEffect, useState } from "react";
 
-export function EmaInfo() {
+export function EmaInfo({ en }) {
   const [info, setInfo] = useState();
   const [error, setError] = useState(false);
 
@@ -30,16 +31,36 @@ export function EmaInfo() {
   return (
     <div>
       <Stack mt={{ xs: 5, sm: 6 }}>
-        <HeaderTextCenter>CURRENT SUBSCRIBERS</HeaderTextCenter>
+        <HeaderTextCenter>
+          {en ? <>CURRENT SUBSCRIBERS</> : <>تعداد دنبال کنندگان</>}
+        </HeaderTextCenter>
       </Stack>
       <HeaderPaper>
-        {info ? info.subs : <TextLoading loading={!error} />}
+        {info ? (
+          en ? (
+            info.subs
+          ) : (
+            numberToPersian(info.subs)
+          )
+        ) : (
+          <TextLoading loading={!error} />
+        )}
       </HeaderPaper>
       <Stack mt={{ xs: 5, sm: 6 }}>
-        <HeaderTextCenter>TOTAL PODCAST PLAYS</HeaderTextCenter>
+        <HeaderTextCenter>
+          {en ? <>TOTAL PODCAST PLAYS</> : <>تعداد دفعات پخش</>}
+        </HeaderTextCenter>
       </Stack>
       <HeaderPaper>
-        {info ? info.plays : <TextLoading loading={!error} />}
+        {info ? (
+          en ? (
+            info.plays
+          ) : (
+            numberToPersian(info.plays)
+          )
+        ) : (
+          <TextLoading loading={!error} />
+        )}
       </HeaderPaper>
     </div>
   );
