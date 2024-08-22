@@ -2,7 +2,7 @@ import { BasketnullCard } from "@/components/cards/BasketnullCard";
 import { EmaEnglishCard } from "@/components/cards/EmaEnglishCard";
 import { PostsContainer } from "@/components/PostsContainer";
 import { PostWrapper } from "@/components/PostWrapper";
-import { generateHreflang } from "@/utils/generateHreflang";
+import { generateHreflangAndOg } from "@/utils/generateHreflangAndOg";
 
 export const metadata = {
   title: "Mitinull",
@@ -25,7 +25,7 @@ export const metadata = {
     "Torabi",
     "Mohammad Torabi",
   ],
-  ...generateHreflang("", "en"),
+  ...generateHreflangAndOg("", "en", "website"),
 };
 
 export default function Home() {

@@ -26,17 +26,15 @@
 + adding Aparat iframe to persian basketnull
 + adding short gameplay to english basketnull
 + improving meta tags
+- meta image (default like github?)
+- adding more links for basketnull
 - improving desktop styles (making text smaller)
-- fixing different card heights
 - lazy blurry loading for images (cards and page)
+- fixing different card heights
 - changing card's justify text?
 - improving cards style
 - fix and improve 404 page
-- fixing tab title and description for persian
 - changing font of mitinull in AppBar (header)
 - making header scrollable
 - implementing filter with tags
-- adding more links for basketnull
 - warning popup if click on play basketnull in mobile
-- second link in basketnull page
-- meta image (default like github?)
