@@ -28,7 +28,9 @@
 + improving meta tags
 - meta image (default like github?)
 - adding more links for basketnull
+- fixing image alt in persian
 - improving desktop styles (making text smaller)
+- adding og:image for homepages
 - lazy blurry loading for images (cards and page)
 - fixing different card heights
 - changing card's justify text?
@@ -36,5 +38,6 @@
 - fix and improve 404 page
 - changing font of mitinull in AppBar (header)
 - making header scrollable
+- making header gif?!
 - implementing filter with tags
 - warning popup if click on play basketnull in mobile
