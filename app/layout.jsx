@@ -2,12 +2,6 @@ import { ROOT_URL } from "@/utils/constants";
 
 export const metadata = {
   metadataBase: new URL(ROOT_URL),
-  title: {
-    template: "Mitinull > %s",
-    default: "Mitinull",
-  },
-  description:
-    "Mitinull's portfolio and blog present an exciting mix of web development, software engineering, and game development projects, along with creative works and personal projects.",
   icons: {
     icon: [
       {

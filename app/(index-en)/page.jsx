@@ -2,12 +2,12 @@ import { BasketnullCard } from "@/components/cards/BasketnullCard";
 import { EmaEnglishCard } from "@/components/cards/EmaEnglishCard";
 import { PostsContainer } from "@/components/PostsContainer";
 import { PostWrapper } from "@/components/PostWrapper";
-import { SwitchTheme } from "@/components/SwitchTheme";
-import { vazir } from "@/utils/fonts";
 import { generateHreflang } from "@/utils/generateHreflang";
-import Link from "next/link";
 
 export const metadata = {
+  title: "Mitinull",
+  description:
+    "Mitinull's portfolio and blog present an exciting mix of web development, software engineering, and game development projects, along with creative works and personal projects.",
   keywords: [
     "Next.js",
     "React",

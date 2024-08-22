@@ -2,8 +2,9 @@ import { BasketnullPage } from "@/components/pages/basketnull/BasketnullPage";
 import { generateHreflang } from "@/utils/generateHreflang";
 
 export const metadata = {
-  title: "Basketnull",
-  description: "Basketnull is a 2d web game.",
+  title: "بسکتنال - بازی متن‌باز",
+  description:
+    "بسکتنال، یک بازی متن‌باز توسط میتینال، ساخته شده با Lua و Love2D. آنلاین بازی کنید و مراحل جدید را در گیت‌هاب اضافه کنید.",
 
   ...generateHreflang("basketnull", "fa"),
 };

@@ -2,11 +2,12 @@ import { BasketnullCard } from "@/components/cards/BasketnullCard";
 import { EmaEnglishCard } from "@/components/cards/EmaEnglishCard";
 import { PostsContainer } from "@/components/PostsContainer";
 import { PostWrapper } from "@/components/PostWrapper";
-import { SwitchTheme } from "@/components/SwitchTheme";
 import { generateHreflang } from "@/utils/generateHreflang";
-import Link from "next/link";
 
 export const metadata = {
+  title: "میتینال",
+  description:
+    "پورتفولیو و وبلاگ میتینال مجموعه‌ای هیجان‌انگیز از پروژه‌های توسعه وب، مهندسی نرم‌افزار و توسعه بازی، همراه با آثار خلاقانه و پروژه‌های شخصی را ارائه می‌دهند.",
   keywords: [
     "Next.js",
     "React",
@@ -27,6 +28,7 @@ export const metadata = {
     "ترابی",
     "محمد ترابی",
   ],
+
   ...generateHreflang("", "fa"),
 };
 
