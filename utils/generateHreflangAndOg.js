@@ -3,7 +3,9 @@ export function generateHreflangAndOg(
   lang,
   type = "article",
   imgUrl,
-  imgAlt
+  imgAlt,
+  imgWidth = 1280,
+  imgHeight = 720
 ) {
   if (!["en", "fa"].includes(lang))
     throw new Error("lang " + lang + " is invalid!");
@@ -29,8 +31,8 @@ export function generateHreflangAndOg(
         images: [
           {
             url: imgUrl,
-            width: 1280,
-            height: 720,
+            width: imgWidth,
+            height: imgHeight,
             ...(imgAlt && { alt: imgAlt }),
           },
         ],

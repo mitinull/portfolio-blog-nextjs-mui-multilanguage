@@ -28,9 +28,9 @@
 + improving meta tags
 + meta image (default like github?)
 + adding more links for basketnull
-- fixing image alt in persian
++ fixing image alt in persian
++ adding og:image for homepages
 - improving desktop styles (making text smaller)
-- adding og:image for homepages
 - lazy blurry loading for images (cards and page)
 - fixing different card heights
 - changing card's justify text?

@@ -2,6 +2,7 @@ import { BasketnullCard } from "@/components/cards/BasketnullCard";
 import { EmaEnglishCard } from "@/components/cards/EmaEnglishCard";
 import { PostsContainer } from "@/components/PostsContainer";
 import { PostWrapper } from "@/components/PostWrapper";
+import { ROOT_URL } from "@/utils/constants";
 import { generateHreflangAndOg } from "@/utils/generateHreflangAndOg";
 
 export const metadata = {
@@ -25,7 +26,16 @@ export const metadata = {
     "Torabi",
     "Mohammad Torabi",
   ],
-  ...generateHreflangAndOg("", "en", "website"),
+
+  ...generateHreflangAndOg(
+    "",
+    "en",
+    "website",
+    ROOT_URL + "/images/mitinull.jpg",
+    "mitinull - bicycle at night",
+    800,
+    800
+  ),
 };
 
 export default function Home() {
