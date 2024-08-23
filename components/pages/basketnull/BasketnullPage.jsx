@@ -34,7 +34,7 @@ export function BasketnullPage({ lang }) {
             browser.`
               : `
             بسکتنال یک بازی دو بعدیه که با Lua و Love2D ساختم. می‌تونید همین
-            الان روی «اجرای بازی» کلیک کنید تا بازی روی مرورگر کامپیوترتون باز بشه.
+            الان روی دکمهٔ «اجرای بازی» کلیک کنید تا بازی روی مرورگر کامپیوترتون باز بشه.
           `}
           </Heading3>
         </HeaderSpacing>
@@ -59,7 +59,7 @@ export function BasketnullPage({ lang }) {
           <Stack mt={{ xs: 6, sm: 10 }} spacing={2.5} mb={2}>
             <Heading3>
               {en
-                ? `Basketnull is an open source game. You can visit the code and add
+                ? `Basketnull is an open-source game. You can explore the source code and add
               new levels if you're interested.`
                 : `
               بسکتنال یه بازی متن بازه؛ می‌تونید کد‌های بازی رو ببینید و مرحله
@@ -68,8 +68,8 @@ export function BasketnullPage({ lang }) {
             </Heading3>
           </Stack>
 
-          <Stack mt={{ xs: 4, sm: 7 }} spacing={{ sm: 3 }}>
-            <HeaderTextCenter fontSize={{ xs: 19.5, sm: 25 }}>
+          <Stack mt={{ xs: 4, sm: 8 }} spacing={{ sm: 3 }}>
+            <HeaderTextCenter fontSize={{ xs: 19.5, sm: 22 }}>
               <Box
                 component="span"
                 sx={{
