@@ -5,7 +5,7 @@ import { Stack } from "@mui/system";
 import { HeaderPaper } from "@/components/mui-components/HeaderPaper";
 import { HeaderSpacing } from "@/components/mui-components/HeaderSpacing";
 import { HeaderTextCenter } from "@/components/mui-components/HeaderTextCenter";
-import { GitHub, Link } from "@mui/icons-material";
+import { Gamepad, GitHub, Link, SportsEsports, SportsVolleyball } from "@mui/icons-material";
 import { Alert, Box, Container } from "@mui/material";
 import { HeaderButton } from "@/components/mui-components/HeaderButton";
 import { PageImage } from "@/components/mui-components/PageImage";
@@ -51,6 +51,7 @@ export function BasketnullPage({ lang }) {
               outlined
               href="https://basketnull.netlify.app/"
               target="_blank"
+              Icon={SportsVolleyball}
             >
               {en ? "Play the Game" : "اجرای بازی بسکتنال"}
             </HeaderButton>
@@ -68,7 +69,7 @@ export function BasketnullPage({ lang }) {
           </Stack>
 
           <Stack mt={{ xs: 4, sm: 7 }} spacing={{ sm: 3 }}>
-            <HeaderTextCenter fontSize={{ xs: 19.5, sm: 27 }}>
+            <HeaderTextCenter fontSize={{ xs: 19.5, sm: 25 }}>
               <Box
                 component="span"
                 sx={{

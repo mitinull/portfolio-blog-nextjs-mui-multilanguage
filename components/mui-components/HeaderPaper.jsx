@@ -6,12 +6,12 @@ export function HeaderPaper({ children }) {
       sx={{
         p: { xs: 1, sm: 1.2 },
         my: { xs: 1.7, sm: 2 },
-        borderRadius: { xs: 100, sm: 1 },
+        borderRadius: { xs: 100, sm: 100 },
       }}
     >
       <Typography
         textAlign="center"
-        fontSize={{ xs: 28, sm: 46 }}
+        fontSize={{ xs: 28, sm: 40 }}
         fontWeight={300}
       >
         {children}
