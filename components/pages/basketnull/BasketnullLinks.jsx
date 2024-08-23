@@ -9,12 +9,22 @@ export function BasketnullLinks() {
   return (
     <CacheProvider value={ltrCache}>
       <Link href="https://basketnull.netlify.app/" target="_blank">
-        <Alert color="info" dir="ltr" variant="outlined">
+        <Alert
+          color="info"
+          dir="ltr"
+          variant="outlined"
+          sx={{ fontSize: { sm: 16 } }}
+        >
           https://basketnull.netlify.app/
         </Alert>
       </Link>
       <Link href="https://basketnull.liara.run/" target="_blank">
-        <Alert color="info" dir="ltr" variant="outlined">
+        <Alert
+          color="info"
+          dir="ltr"
+          variant="outlined"
+          sx={{ fontSize: { sm: 16 } }}
+        >
           https://basketnull.liara.run/
         </Alert>
       </Link>

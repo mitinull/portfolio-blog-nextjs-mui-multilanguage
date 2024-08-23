@@ -111,6 +111,7 @@ export function EmaEnglishPage({ lang }) {
                 startIcon={<Podcasts />}
                 href="https://castbox.fm/channel/id5058728?utm_source=website&utm_medium=dlink&utm_campaign=web_share&utm_content=EMA%20English%20%7C%20English%20Music%20%7C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%20%D8%B2%D8%A8%D8%A7%D9%86"
                 target="_blank"
+                sx={{ p: { sm: 1.5 } }}
               >
                 {en ? (
                   <>EMA English on Castbox</>
@@ -123,6 +124,7 @@ export function EmaEnglishPage({ lang }) {
                 startIcon={<Telegram />}
                 href="https://t.me/emaEnglish"
                 target="_blank"
+                sx={{ p: { sm: 1.5 } }}
               >
                 {en ? <>Visit Telegram Channel</> : <>رفتن به کانال تلگرام</>}
               </Button>
