@@ -35,7 +35,7 @@ export function EmaEnglishPage({ lang }) {
         </HeaderSpacing>
         <Stack mt={{ xs: 6, sm: 7 }}>
           <PageImage
-            alt="EMA English Logo"
+            alt={en ? "EMA English Logo" : "لوگوی اما انگلیش"}
             light="/images/ema-light.jpg"
             dark="/images/ema-dark.jpg"
           />

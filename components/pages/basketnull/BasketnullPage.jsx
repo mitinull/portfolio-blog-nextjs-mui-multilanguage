@@ -40,7 +40,7 @@ export function BasketnullPage({ lang }) {
         </HeaderSpacing>
         <Stack mt={{ xs: 6, sm: 7 }}>
           <PageImage
-            alt="EMA English Logo"
+            alt={en ? "Basketnull Game Poster" : "پوستر بازی بسکتنال"}
             light="/images/basketnull-light.jpg"
             dark="/images/basketnull-dark.jpg"
           />

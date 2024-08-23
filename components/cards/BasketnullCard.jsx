@@ -14,26 +14,28 @@ import { MyCardBody } from "../mui-components/MyCardBody";
 import { MyCard } from "../mui-components/MyCard";
 
 export function BasketnullCard({ lang }) {
+  const en = lang === "en";
+
   return (
     <MyCard>
       <CardMedia
         component="img"
-        alt="basketnull game"
+        alt={en ? "basketnull game poster" : "پوستر بازی بسکتنال"}
         image="/images/basketnull-light.jpg"
         className="img-light"
       />
       <CardMedia
         component="img"
-        alt="basketnull game"
+        alt={en ? "basketnull game poster" : "پوستر بازی بسکتنال"}
         image="/images/basketnull-dark.jpg"
         className="img-dark"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          {lang === "en" ? "Basketnull Game" : "بازی بسکتنال (Basketnull)"}
+          {en ? "Basketnull Game" : "بازی بسکتنال (Basketnull)"}
         </Typography>
         <MyCardBody>
-          {lang === "en"
+          {en
             ? `Basketnull is a 2D web-based game 
             that I developed using Lua and the Love2D framework.
              You can play it right now on your computer browser.`
@@ -43,7 +45,7 @@ export function BasketnullCard({ lang }) {
         </MyCardBody>
         <Stack direction="row" mt={2}>
           <Chip
-            label={lang === "en" ? "Game Dev" : "بازی سازی"}
+            label={en ? "Game Dev" : "بازی سازی"}
             size="small"
             variant="outlined"
           />
@@ -55,13 +57,13 @@ export function BasketnullCard({ lang }) {
           href="https://basketnull.netlify.app/"
           newTab
         >
-          {lang === "en" ? "Play the Game" : "همین الان بازی کن"}
+          {en ? "Play the Game" : "همین الان بازی کن"}
         </MyCardButton>
         <MyCardButton
           Icon={<CustomReadMoreIcon lang={lang} />}
           href="./basketnull"
         >
-          {lang === "en" ? "Read More" : "بیشتر بخوانید"}
+          {en ? "Read More" : "بیشتر بخوانید"}
         </MyCardButton>
       </CardActions>
     </MyCard>

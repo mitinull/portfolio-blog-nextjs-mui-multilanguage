@@ -57,14 +57,14 @@ export function MyAppBar({ lang }) {
           <img
             className="img-dark"
             src="/images/icon-dark.svg"
-            alt="bicycle logo"
+            alt={en ? "bicycle logo" : "لوگوی دوچرخه"}
             width={35}
             style={{ scale: en ? "1" : "-1 1", opacity: 0.9 }}
           />
           <img
             className="img-light"
             src="/images/icon-light.svg"
-            alt="bicycle logo"
+            alt={en ? "bicycle logo" : "لوگوی دوچرخه"}
             width={35}
             style={{ scale: en ? "1" : "-1 1", opacity: 0.85 }}
           />
