@@ -5,8 +5,8 @@ import { Stack } from "@mui/system";
 import { HeaderPaper } from "@/components/mui-components/HeaderPaper";
 import { HeaderSpacing } from "@/components/mui-components/HeaderSpacing";
 import { HeaderTextCenter } from "@/components/mui-components/HeaderTextCenter";
-import { GitHub } from "@mui/icons-material";
-import { Box, Container } from "@mui/material";
+import { GitHub, Link } from "@mui/icons-material";
+import { Alert, Box, Container } from "@mui/material";
 import { HeaderButton } from "@/components/mui-components/HeaderButton";
 import { PageImage } from "@/components/mui-components/PageImage";
 import { ChangeLanguage } from "@/components/mui-components/ChangeLanguage";
@@ -14,6 +14,7 @@ import { BasketnullStars } from "./BasketnullStars";
 import { PageContent } from "@/components/mui-components/PageContent";
 import { ParagraphMedium } from "@/components/mui-components/ParagraphMedium";
 import { AparatBasketnull } from "./AparatBasketnull";
+import { BasketnullLinks } from "./BasketnullLinks";
 
 export function BasketnullPage({ lang }) {
   const en = lang === "en";
@@ -124,9 +125,7 @@ export function BasketnullPage({ lang }) {
         <>
           <Container maxWidth="md">
             <PageContent>
-              <ParagraphMedium>
-                📺 Watch a Short Gameplay:
-              </ParagraphMedium>
+              <ParagraphMedium>📺 Watch a Short Gameplay:</ParagraphMedium>
             </PageContent>
           </Container>
           <Stack mx={2}>
@@ -153,6 +152,16 @@ export function BasketnullPage({ lang }) {
           </Stack>
         </>
       )}
+      <Container maxWidth="md">
+        <PageContent>
+          <Stack spacing={{ xs: 3, sm: 5 }} pt={2}>
+            <ParagraphMedium textAlign="center">
+              {en ? <>Links to Play the Game</> : <>لینک‌های اجرای بازی</>}
+            </ParagraphMedium>
+            <BasketnullLinks />
+          </Stack>
+        </PageContent>
+      </Container>
     </main>
   );
 }
