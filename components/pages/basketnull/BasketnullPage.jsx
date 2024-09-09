@@ -5,7 +5,13 @@ import { Stack } from "@mui/system";
 import { HeaderPaper } from "@/components/mui-components/HeaderPaper";
 import { HeaderSpacing } from "@/components/mui-components/HeaderSpacing";
 import { HeaderTextCenter } from "@/components/mui-components/HeaderTextCenter";
-import { Gamepad, GitHub, Link, SportsEsports, SportsVolleyball } from "@mui/icons-material";
+import {
+  Gamepad,
+  GitHub,
+  Link,
+  SportsEsports,
+  SportsVolleyball,
+} from "@mui/icons-material";
 import { Alert, Box, Container } from "@mui/material";
 import { HeaderButton } from "@/components/mui-components/HeaderButton";
 import { PageImage } from "@/components/mui-components/PageImage";
@@ -49,7 +55,7 @@ export function BasketnullPage({ lang }) {
           <Stack mt={{ xs: 6, sm: 9 }}>
             <HeaderButton
               outlined
-              href="https://basketnull.netlify.app/"
+              href="https://mitinull.itch.io/basketnull"
               target="_blank"
               Icon={SportsVolleyball}
             >

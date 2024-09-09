@@ -8,6 +8,16 @@ import Link from "next/link";
 export function BasketnullLinks() {
   return (
     <CacheProvider value={ltrCache}>
+      <Link href="https://mitinull.itch.io/basketnull" target="_blank">
+        <Alert
+          color="info"
+          dir="ltr"
+          variant="outlined"
+          sx={{ fontSize: { sm: 16 } }}
+        >
+          https://mitinull.itch.io/basketnull
+        </Alert>
+      </Link>
       <Link href="https://basketnull.netlify.app/" target="_blank">
         <Alert
           color="info"
