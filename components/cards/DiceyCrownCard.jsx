@@ -21,13 +21,13 @@ export function DiceyCrownCard({ lang }) {
       <CardMedia
         component="img"
         alt={en ? "dicey crown game poster" : "پوستر بازی بسکتنال"}
-        image="/images/dicey-crown-light.jpg"
+        image="/images/dicey-crown/dicey-crown-light.jpg"
         className="img-light"
       />
       <CardMedia
         component="img"
         alt={en ? "dicey crown game poster" : "پوستر بازی بسکتنال"}
-        image="/images/dicey-crown-dark.jpg"
+        image="/images/dicey-crown/dicey-crown-dark.jpg"
         className="img-dark"
       />
       <CardContent>

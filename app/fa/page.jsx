@@ -1,4 +1,5 @@
 import { BasketnullCard } from "@/components/cards/BasketnullCard";
+import { DiceyCrownCard } from "@/components/cards/DiceyCrownCard";
 import { EmaEnglishCard } from "@/components/cards/EmaEnglishCard";
 import { PostsContainer } from "@/components/PostsContainer";
 import { PostWrapper } from "@/components/PostWrapper";
@@ -52,6 +53,9 @@ export default function Home() {
         </PostWrapper>
         <PostWrapper>
           <EmaEnglishCard lang={lang} />
+        </PostWrapper>
+        <PostWrapper>
+          <DiceyCrownCard lang={lang} />
         </PostWrapper>
       </PostsContainer>
     </main>
