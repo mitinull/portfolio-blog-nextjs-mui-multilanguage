@@ -5,37 +5,37 @@ import { CacheProvider } from "@emotion/react";
 import { Alert } from "@mui/material";
 import Link from "next/link";
 
-export function BasketnullLinks() {
+export function PlayDiceyCrownLinks() {
   return (
     <CacheProvider value={ltrCache}>
-      <Link href="https://mitinull.itch.io/basketnull" target="_blank">
+      <Link href="https://mitinull.itch.io/diceycrown" target="_blank">
         <Alert
           color="info"
           dir="ltr"
           variant="outlined"
           sx={{ fontSize: { sm: 16 } }}
         >
-          https://mitinull.itch.io/basketnull
+          https://mitinull.itch.io/diceycrown
         </Alert>
       </Link>
-      <Link href="https://basketnull.netlify.app/" target="_blank">
+      <Link href="https://diceycrown.netlify.app/" target="_blank">
         <Alert
           color="info"
           dir="ltr"
           variant="outlined"
           sx={{ fontSize: { sm: 16 } }}
         >
-          https://basketnull.netlify.app/
+          https://diceycrown.netlify.app/
         </Alert>
       </Link>
-      <Link href="https://basketnull.liara.run/" target="_blank">
+      <Link href="https://diceycrown.liara.run/" target="_blank">
         <Alert
           color="info"
           dir="ltr"
           variant="outlined"
           sx={{ fontSize: { sm: 16 } }}
         >
-          https://basketnull.liara.run/
+          https://diceycrown.liara.run/
         </Alert>
       </Link>
     </CacheProvider>

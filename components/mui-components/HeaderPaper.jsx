@@ -1,6 +1,6 @@
 import { Paper, Typography } from "@mui/material";
 
-export function HeaderPaper({ children }) {
+export function HeaderPaper({ children, smaller }) {
   return (
     <Paper
       sx={{
@@ -11,8 +11,12 @@ export function HeaderPaper({ children }) {
     >
       <Typography
         textAlign="center"
-        fontSize={{ xs: 28, sm: 40 }}
+        fontSize={smaller ? { xs: 26, sm: 38 } : { xs: 28, sm: 40 }}
         fontWeight={300}
+        display={"flex"}
+        alignItems={"center"}
+        gap={2}
+        justifyContent={"center"}
       >
         {children}
       </Typography>
