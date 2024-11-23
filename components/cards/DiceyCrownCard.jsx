@@ -36,9 +36,7 @@ export function DiceyCrownCard({ lang }) {
         </Typography>
         <MyCardBody>
           {en
-            ? `Basketnull is a 2D web-based game 
-            that I developed using Lua and the Love2D framework.
-             You can play it right now on your computer browser.`
+            ? `We developed this game in one week for Amirkabir University Gamecraft 2024. Dicey Crown ranked first out of 29 games.`
             : `این بازی رو برای مسابقه بازی‌سازی دانشگاه امیرکبیر ساختیم و موفق به کسب مقام اول شدیم.`}
         </MyCardBody>
         <Stack direction="row" mt={2}>
