@@ -12,6 +12,7 @@ import {
   Keyboard,
   Link as LinkIcon,
   LinkedIn,
+  SportsEsports,
 } from "@mui/icons-material";
 import { Alert, Box, Container } from "@mui/material";
 import { HeaderButton } from "@/components/mui-components/HeaderButton";
@@ -39,16 +40,13 @@ export function DiceyCrownPage({ lang }) {
       )}
       <PageHeader>
         <HeaderSpacing vertical>
-          <Heading1>{en ? "Dicey Crown" : "تاج پرخطر (Dicey Crown)"}</Heading1>
+          <Heading1>{en ? "Dicey Crown" : "تاج پرخطر 👑"}</Heading1>
           <Heading3>
             {en
               ? `Basketnull is a 2D web-based game that I developed using Lua and the
             Love2D framework. You can play it right now on your computer
             browser.`
-              : `
-              این بازی رو برای رویداد بازی‌سازی دانشگاه امیرکبیر در مدت زمان یک هفته ساختیم.
-               این بازی از بین ۲۹ بازی ساخته شده با امتیاز 7.35 مقام اول رو کسب کرد.
-          `}
+              : `این بازی رو در مدت زمان یک هفته برای رویداد بازی‌سازی دانشگاه امیرکبیر ساختیم. اسم بازی Dicey Crown یا همون تاج پرخطره که از بین ۲۹ بازی ساخته شده با امتیاز ۷٫۳۵ مقام اول رو کسب کرد. 🥇`}
           </Heading3>
         </HeaderSpacing>
         <Stack mt={{ xs: 6, sm: 7 }}>
@@ -75,8 +73,8 @@ export function DiceyCrownPage({ lang }) {
           </Stack>
         </HeaderSpacing>
         <HeaderSpacing>
-          <Stack mt={{ xs: 5, sm: 7 }} spacing={{ sm: 3 }}>
-            <HeaderTextCenter fontSize={{ xs: 19.5, sm: 22 }}>
+          <Stack mt={{ xs: 7, sm: 11 }} spacing={{ sm: 3 }}>
+            <HeaderTextCenter fontSize={{ xs: 17.5, sm: 24 }}>
               <Box
                 component="span"
                 sx={{
@@ -86,19 +84,31 @@ export function DiceyCrownPage({ lang }) {
                   gap: { xs: 2, sm: 2 },
                 }}
               >
-                <Keyboard />
+                {/* <Keyboard /> */}
                 {en ? "STARS ON GITHUB" : "برنامه نویس و طراح مرحله"}
               </Box>
             </HeaderTextCenter>
-            <HeaderPaper smaller>
-              {en ? "Mohammad Torabi" : "محمد ترابی"}
-              <Link href={"https://github.com/mitinull"} target="_blank">
-                <GitHub />
-              </Link>
+            <HeaderPaper smaller morePadding>
+              <Stack
+                component={"span"}
+                direction={"row"}
+                alignItems={"center"}
+                gap={{ xs: 1.5, sm: 2 }}
+                justifyContent={"center"}
+              >
+                {en ? "Mohammad Torabi" : "محمد ترابی"}
+                <Stack
+                  component={Link}
+                  href={"https://github.com/mitinull"}
+                  target="_blank"
+                >
+                  <GitHub fontSize="inherit" />
+                </Stack>
+              </Stack>
             </HeaderPaper>
           </Stack>
-          <Stack mt={{ xs: 4, sm: 6 }} spacing={{ sm: 3 }}>
-            <HeaderTextCenter fontSize={{ xs: 19.5, sm: 22 }}>
+          <Stack mt={{ xs: 4, sm: 7 }} spacing={{ sm: 3 }}>
+            <HeaderTextCenter fontSize={{ xs: 17.5, sm: 24 }}>
               <Box
                 component="span"
                 sx={{
@@ -108,20 +118,29 @@ export function DiceyCrownPage({ lang }) {
                   gap: { xs: 2, sm: 2 },
                 }}
               >
-                <Brush />
+                {/* <Brush /> */}
                 {en ? "STARS ON GITHUB" : "گرافیست و طراح منو"}
               </Box>
             </HeaderTextCenter>
-            <HeaderPaper smaller>
-              {en ? "Mohammad Torabi" : "محمدحسن روحانی"}
-              <Link
-                href={
-                  "https://linkedin.com/in/mohammad-hassan-rouhani-501ab5287"
-                }
-                target="_blank"
+            <HeaderPaper smaller morePadding>
+              <Stack
+                component={"span"}
+                direction={"row"}
+                alignItems={"center"}
+                gap={{ xs: 1.5, sm: 2 }}
+                justifyContent={"center"}
               >
-                <LinkedIn />
-              </Link>
+                {en ? "Mohammad Torabi" : "محمدحسن روحانی"}
+                <Stack
+                  component={Link}
+                  href={
+                    "https://linkedin.com/in/mohammad-hassan-rouhani-501ab5287"
+                  }
+                  target="_blank"
+                >
+                  <LinkedIn fontSize="inherit" />
+                </Stack>
+              </Stack>
             </HeaderPaper>
           </Stack>
 
@@ -130,7 +149,7 @@ export function DiceyCrownPage({ lang }) {
               // outlined
               href="https://mitinull.itch.io/diceycrown"
               target="_blank"
-              Icon={EmojiEvents}
+              Icon={SportsEsports}
             >
               {en
                 ? "Play Dicey Crown Right Now"
@@ -142,7 +161,7 @@ export function DiceyCrownPage({ lang }) {
 
       <Container maxWidth="md">
         <PageContent>
-          <Stack spacing={4}>
+          <Stack spacing={{ xs: 4, sm: 6 }}>
             <Heading2>موضوع مسابقه</Heading2>
             <ParagraphMedium>
               موضوع مسابقه به طرز جالب و نوآورانه‌ای یک تصویر بود! وظیفه ما این
@@ -160,7 +179,7 @@ export function DiceyCrownPage({ lang }) {
         <Stack
           width="100%"
           maxWidth={1000}
-          mt={5}
+          mt={{ xs: 5, sm: 7 }}
           mx="auto"
           borderRadius={2}
           alignItems="center"
@@ -182,7 +201,7 @@ export function DiceyCrownPage({ lang }) {
 
       <Container maxWidth="md">
         <PageContent>
-          <Stack spacing={4}>
+          <Stack spacing={{ xs: 4, sm: 6 }}>
             <Heading2>توضیحات و گیم‌پلی بازی «Dicey Crown»</Heading2>
 
             <ParagraphMedium>
@@ -199,7 +218,7 @@ export function DiceyCrownPage({ lang }) {
         <Stack
           width="100%"
           maxWidth={1000}
-          mt={5}
+          mt={{ xs: 5, sm: 7 }}
           mx="auto"
           borderRadius={2}
           alignItems="center"
@@ -212,7 +231,7 @@ export function DiceyCrownPage({ lang }) {
             // preload="none"
             style={{ width: "100%", height: "auto" }}
           >
-            <source src="/videos/Dicey-Crown-Gameplay-2.mp4" type="video/mp4" />
+            <source src="/videos/Dicey-Crown-Gameplay.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </Stack>
