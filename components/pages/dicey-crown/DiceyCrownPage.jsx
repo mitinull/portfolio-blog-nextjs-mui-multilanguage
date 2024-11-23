@@ -162,7 +162,7 @@ export function DiceyCrownPage({ lang }) {
       <Container maxWidth="md">
         <PageContent>
           <Stack spacing={{ xs: 4, sm: 6 }}>
-            <Heading2>موضوع مسابقه</Heading2>
+            <Heading2>موضوع مسابقه «AUT_Gamecraft_2024»</Heading2>
             <ParagraphMedium>
               موضوع مسابقه به طرز جالب و نوآورانه‌ای یک تصویر بود! وظیفه ما این
               بود که با الهام از این تصویر، بازی‌ای طراحی کنیم که ارتباط اون با
@@ -202,7 +202,7 @@ export function DiceyCrownPage({ lang }) {
       <Container maxWidth="md">
         <PageContent>
           <Stack spacing={{ xs: 4, sm: 6 }}>
-            <Heading2>توضیحات و گیم‌پلی بازی «Dicey Crown»</Heading2>
+            <Heading2>توضیحات و گیم‌پلی بازی «Dicey_Crown»</Heading2>
 
             <ParagraphMedium>
               کلمهٔ «Dicey» به معنای غیرقابل‌پیش‌بینی و پر ریسک است، و این دقیقا
