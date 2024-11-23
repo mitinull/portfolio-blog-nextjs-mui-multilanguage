@@ -81,7 +81,7 @@ export function MyAppBar({ lang }) {
               color: "text.primary",
             }}
           >
-            {en ? "Mitinull" : "مـیتینـال"}
+            {en ? "Mitinull's Work" : "پروژه‌های میتینال"}
           </Typography>
         </Link>
 
