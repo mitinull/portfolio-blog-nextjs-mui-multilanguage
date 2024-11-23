@@ -32,16 +32,14 @@ export function DiceyCrownCard({ lang }) {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          {en ? "Dicey Crown" : "بازی بسکتنال (Basketnull)"}
+          {en ? "Dicey Crown" : "بازی تاج پرخطر (Dicey Crown)"}
         </Typography>
         <MyCardBody>
           {en
             ? `Basketnull is a 2D web-based game 
             that I developed using Lua and the Love2D framework.
              You can play it right now on your computer browser.`
-            : `بازی بسکتنال یک بازی دو بعدی تحت وبه.
-             این بازی رو با زبان Lua و فریمورک Love2D ساختم. 
-          همین الان می‌تونید این بازی رو با مرورگر کامپیوترتون اجرا کنید.`}
+            : `این بازی رو برای مسابقه بازی‌سازی دانشگاه امیرکبیر ساختیم و موفق به کسب مقام اول شدیم.`}
         </MyCardBody>
         <Stack direction="row" mt={2}>
           <Chip
@@ -54,7 +52,7 @@ export function DiceyCrownCard({ lang }) {
       <CardActions>
         <MyCardButton
           Icon={<SportsEsports />}
-          href="https://basketnull.netlify.app/"
+          href="https://mitinull.itch.io/diceycrown/"
           newTab
         >
           {en ? "Play the Game" : "همین الان بازی کن"}
