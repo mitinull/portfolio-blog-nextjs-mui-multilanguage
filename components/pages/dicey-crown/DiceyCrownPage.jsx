@@ -240,7 +240,7 @@ export function DiceyCrownPage({ lang }) {
       <Container maxWidth="md">
         <PageContent>
           <Stack spacing={{ xs: 3, sm: 5 }} pt={2}>
-            <Heading2>لینک‌های اجرای بازی</Heading2>
+            <Heading2>لینک‌های اجرای بازی (نسخهٔ تحت وب)</Heading2>
             <PlayDiceyCrownLinks />
           </Stack>
         </PageContent>
