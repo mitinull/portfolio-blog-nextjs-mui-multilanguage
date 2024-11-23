@@ -20,13 +20,13 @@ export function DiceyCrownCard({ lang }) {
     <MyCard>
       <CardMedia
         component="img"
-        alt={en ? "dicey crown game poster" : "پوستر بازی بسکتنال"}
+        alt={en ? "dicey crown game poster" : "پوستر بازی تاج پرخطر"}
         image="/images/dicey-crown/dicey-crown-light.jpg"
         className="img-light"
       />
       <CardMedia
         component="img"
-        alt={en ? "dicey crown game poster" : "پوستر بازی بسکتنال"}
+        alt={en ? "dicey crown game poster" : "پوستر بازی تاج پرخطر"}
         image="/images/dicey-crown/dicey-crown-dark.jpg"
         className="img-dark"
       />
