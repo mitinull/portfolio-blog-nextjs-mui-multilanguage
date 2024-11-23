@@ -32,6 +32,7 @@
 + adding og:image for homepages
 + fixing dicey crown metadata
 + fixing basketnull card link
+- open post by clicking on the image
 - improving desktop styles (making text smaller)
 - lazy blurry loading for images (cards and page)
 - fixing different card heights

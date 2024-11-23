@@ -12,24 +12,27 @@ import { MyCardButton } from "../mui-components/MyCardButton";
 import { CustomReadMoreIcon } from "../CustomReadMoreIcon";
 import { MyCardBody } from "../mui-components/MyCardBody";
 import { MyCard } from "../mui-components/MyCard";
+import Link from "next/link";
 
 export function BasketnullCard({ lang }) {
   const en = lang === "en";
 
   return (
     <MyCard>
-      <CardMedia
-        component="img"
-        alt={en ? "basketnull game poster" : "پوستر بازی بسکتنال"}
-        image="/images/basketnull-light.jpg"
-        className="img-light"
-      />
-      <CardMedia
-        component="img"
-        alt={en ? "basketnull game poster" : "پوستر بازی بسکتنال"}
-        image="/images/basketnull-dark.jpg"
-        className="img-dark"
-      />
+      <Link href={"./basketnull"}>
+        <CardMedia
+          component="img"
+          alt={en ? "basketnull game poster" : "پوستر بازی بسکتنال"}
+          image="/images/basketnull-light.jpg"
+          className="img-light"
+        />
+        <CardMedia
+          component="img"
+          alt={en ? "basketnull game poster" : "پوستر بازی بسکتنال"}
+          image="/images/basketnull-dark.jpg"
+          className="img-dark"
+        />
+      </Link>
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {en ? "Basketnull Game" : "بازی بسکتنال (Basketnull)"}

@@ -12,24 +12,27 @@ import { MyCardButton } from "../mui-components/MyCardButton";
 import { CustomReadMoreIcon } from "../CustomReadMoreIcon";
 import { MyCardBody } from "../mui-components/MyCardBody";
 import { MyCard } from "../mui-components/MyCard";
+import Link from "next/link";
 
 export function EmaEnglishCard({ lang }) {
   const en = lang === "en";
 
   return (
     <MyCard>
-      <CardMedia
-        component="img"
-        alt={en ? "ema english logo" : "لوگوی اما انگلیش"}
-        image="/images/ema-light.jpg"
-        className="img-light"
-      />
-      <CardMedia
-        component="img"
-        alt={en ? "ema english logo" : "لوگوی اما انگلیش"}
-        image="/images/ema-dark.jpg"
-        className="img-dark"
-      />
+      <Link href="./ema-english">
+        <CardMedia
+          component="img"
+          alt={en ? "ema english logo" : "لوگوی اما انگلیش"}
+          image="/images/ema-light.jpg"
+          className="img-light"
+        />
+        <CardMedia
+          component="img"
+          alt={en ? "ema english logo" : "لوگوی اما انگلیش"}
+          image="/images/ema-dark.jpg"
+          className="img-dark"
+        />
+      </Link>
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {en ? "EMA English Podcast" : "پادکست اِما انگلیش"}

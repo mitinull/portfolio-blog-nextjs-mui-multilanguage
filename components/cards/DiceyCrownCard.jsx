@@ -12,24 +12,27 @@ import { MyCardButton } from "../mui-components/MyCardButton";
 import { CustomReadMoreIcon } from "../CustomReadMoreIcon";
 import { MyCardBody } from "../mui-components/MyCardBody";
 import { MyCard } from "../mui-components/MyCard";
+import Link from "next/link";
 
 export function DiceyCrownCard({ lang }) {
   const en = lang === "en";
 
   return (
     <MyCard>
-      <CardMedia
-        component="img"
-        alt={en ? "dicey crown game poster" : "پوستر بازی تاج پرخطر"}
-        image="/images/dicey-crown/dicey-crown-light.jpg"
-        className="img-light"
-      />
-      <CardMedia
-        component="img"
-        alt={en ? "dicey crown game poster" : "پوستر بازی تاج پرخطر"}
-        image="/images/dicey-crown/dicey-crown-dark.jpg"
-        className="img-dark"
-      />
+      <Link href="./dicey-crown">
+        <CardMedia
+          component="img"
+          alt={en ? "dicey crown game poster" : "پوستر بازی تاج پرخطر"}
+          image="/images/dicey-crown/dicey-crown-light.jpg"
+          className="img-light"
+        />
+        <CardMedia
+          component="img"
+          alt={en ? "dicey crown game poster" : "پوستر بازی تاج پرخطر"}
+          image="/images/dicey-crown/dicey-crown-dark.jpg"
+          className="img-dark"
+        />
+      </Link>
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {en ? "Dicey Crown" : "بازی تاج پرخطر (Dicey Crown)"}
