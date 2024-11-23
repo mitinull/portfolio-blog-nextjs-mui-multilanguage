@@ -54,7 +54,7 @@ export function BasketnullCard({ lang }) {
       <CardActions>
         <MyCardButton
           Icon={<SportsEsports />}
-          href="https://basketnull.netlify.app/"
+          href="https://mitinull.itch.io/basketnull"
           newTab
         >
           {en ? "Play the Game" : "همین الان بازی کن"}
