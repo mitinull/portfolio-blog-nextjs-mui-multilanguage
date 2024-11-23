@@ -40,12 +40,10 @@ export function DiceyCrownPage({ lang }) {
       )}
       <PageHeader>
         <HeaderSpacing vertical>
-          <Heading1>{en ? "Dicey Crown" : "تاج پرخطر 👑"}</Heading1>
+          <Heading1>{en ? "Dicey Crown 👑" : "تاج پرخطر 👑"}</Heading1>
           <Heading3>
             {en
-              ? `Basketnull is a 2D web-based game that I developed using Lua and the
-            Love2D framework. You can play it right now on your computer
-            browser.`
+              ? `We developed this game in one week for AUT Gamecraft 2024 (the Amirkabir University Game Development Contest). The game, Dicey Crown, scored 7.35 and ranked first out of 29 submissions. 🥇`
               : `این بازی رو در مدت زمان یک هفته برای رویداد بازی‌سازی دانشگاه امیرکبیر ساختیم. اسم بازی Dicey Crown یا همون تاج پرخطره که از بین ۲۹ بازی ساخته شده با امتیاز ۷٫۳۵ مقام اول رو کسب کرد. 🥇`}
           </Heading3>
         </HeaderSpacing>
@@ -68,7 +66,9 @@ export function DiceyCrownPage({ lang }) {
               }
             >
               <LinkIcon />
-              از این لینک می‌تونید نمرات همهٔ بازی‌ها رو ببینید.
+              {en
+                ? "You can view the scores of all the games from this link."
+                : "از این لینک می‌تونید نمرات همهٔ بازی‌ها رو ببینید."}
             </HeadingLink>
           </Stack>
         </HeaderSpacing>
@@ -85,7 +85,9 @@ export function DiceyCrownPage({ lang }) {
                 }}
               >
                 {/* <Keyboard /> */}
-                {en ? "STARS ON GITHUB" : "برنامه نویس و طراح مرحله"}
+                {en
+                  ? "Programming and Level Design"
+                  : "برنامه نویس و طراح مرحله"}
               </Box>
             </HeaderTextCenter>
             <HeaderPaper smaller morePadding>
@@ -119,7 +121,7 @@ export function DiceyCrownPage({ lang }) {
                 }}
               >
                 {/* <Brush /> */}
-                {en ? "STARS ON GITHUB" : "گرافیست و طراح منو"}
+                {en ? "Art and Menu Design" : "گرافیست و طراح منو"}
               </Box>
             </HeaderTextCenter>
             <HeaderPaper smaller morePadding>
@@ -130,7 +132,7 @@ export function DiceyCrownPage({ lang }) {
                 gap={{ xs: 1.5, sm: 2 }}
                 justifyContent={"center"}
               >
-                {en ? "Mohammad Torabi" : "محمدحسن روحانی"}
+                {en ? "Mohammad Hassan Rouhani" : "محمدحسن روحانی"}
                 <Stack
                   component={Link}
                   href={
@@ -162,14 +164,30 @@ export function DiceyCrownPage({ lang }) {
       <Container maxWidth="md">
         <PageContent>
           <Stack spacing={{ xs: 4, sm: 6 }}>
-            <Heading2>موضوع مسابقه «AUT_Gamecraft_2024»</Heading2>
+            <Heading2>
+              {en
+                ? "What Was the Theme of AUT Gamecraft 2024?"
+                : "موضوع مسابقه «AUT_Gamecraft_2024»"}
+            </Heading2>
             <ParagraphMedium>
-              موضوع مسابقه به طرز جالب و نوآورانه‌ای یک تصویر بود! وظیفه ما این
+              {en
+                ? `
+              The theme of the AUT Gamecraft 2024 contest was quite innovative:
+              it was based on a single image! Our task was to design a game
+              inspired by this image, ensuring the connection between the theme
+              and the game was clear. The game was expected to have certain
+              features, such as being multiplayer or incorporating elements from
+              classic board games like chess or Ludo. Fortunately, we scored
+              well in the theme category!`
+                : `
+                            موضوع مسابقه به طرز جالب و نوآورانه‌ای یک تصویر بود! وظیفه ما این
               بود که با الهام از این تصویر، بازی‌ای طراحی کنیم که ارتباط اون با
               موضوع و تِم کاملاً مشهود باشه. بهتر بود که بازی طراحی‌شده
               ویژگی‌های خاصی داشته باشه مثلا چندنفره باشه یا از عناصر بازی‌های
               تخته‌ای کلاسیک (مثل شطرنج یا منچ) استفاده کنه. خوشبختانه از قسمت
               تِم امتیاز خوبی گرفتیم.
+
+              `}
             </ParagraphMedium>
           </Stack>
         </PageContent>
@@ -202,14 +220,24 @@ export function DiceyCrownPage({ lang }) {
       <Container maxWidth="md">
         <PageContent>
           <Stack spacing={{ xs: 4, sm: 6 }}>
-            <Heading2>توضیحات و گیم‌پلی بازی «Dicey_Crown»</Heading2>
+            <Heading2>
+              {en
+                ? 'Description and Gameplay of "Dicey Crown"'
+                : "توضیحات و گیم‌پلی بازی «Dicey_Crown»"}
+            </Heading2>
 
             <ParagraphMedium>
+              {en
+                ? `
+              The word "Dicey" means unpredictable and risky, which perfectly captures the feeling experienced in this game. No one knows who will claim the crown, but if you have a good strategy in collecting dice and timing the elimination of opponent's pieces, alongside quick reflexes, your chances of victory increase.
+              `
+                : `
               کلمهٔ «Dicey» به معنای غیرقابل‌پیش‌بینی و پر ریسک است، و این دقیقا
               همان حسی است که در این بازی تجربه می‌کنید. هیچ‌کس نمی‌داند چه کسی
               تاج را تصاحب خواهد کرد؛ اما اگر علاوه بر سرعت عمل، در ترتیب
               جمع‌آوری تاس‌ها و انتخاب زمان مناسب برای از بین بردن مهره‌های حریف
-              استراتژی درستی داشته باشید، شانس شما برای پیروزی بیشتر خواهد شد.{" "}
+              استراتژی درستی داشته باشید، شانس شما برای پیروزی بیشتر خواهد شد.
+            `}
             </ParagraphMedium>
           </Stack>
         </PageContent>
@@ -240,7 +268,11 @@ export function DiceyCrownPage({ lang }) {
       <Container maxWidth="md">
         <PageContent>
           <Stack spacing={{ xs: 3, sm: 5 }} pt={2}>
-            <Heading2>لینک‌های اجرای بازی (نسخهٔ تحت وب)</Heading2>
+            <Heading2>
+              {en
+                ? `Links to Play the Game (Web Version)`
+                : `لینک‌های اجرای بازی (نسخهٔ تحت وب)`}
+            </Heading2>
             <PlayDiceyCrownLinks />
           </Stack>
         </PageContent>
@@ -249,7 +281,9 @@ export function DiceyCrownPage({ lang }) {
       <Container maxWidth="md">
         <PageContent>
           <Stack spacing={{ xs: 3, sm: 5 }} pt={2}>
-            <Heading2>لینک دانلود بازی (ویندوز)</Heading2>
+            <Heading2>
+              {en ? `Download the Game (Windows)` : `لینک دانلود بازی (ویندوز)`}
+            </Heading2>
             <DownloadDiceyCrownLinks />
           </Stack>
         </PageContent>
