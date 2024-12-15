@@ -6,10 +6,19 @@ import { PageImage } from "@/components/mui-components/PageImage";
 import { PageQuote } from "@/components/mui-components/PageQuote";
 import { ParagraphMedium } from "@/components/mui-components/ParagraphMedium";
 import { Podcasts, Telegram } from "@mui/icons-material";
-import { Button, Container, Stack } from "@mui/material";
+import {
+  Alert,
+  AlertTitle,
+  Button,
+  Container,
+  Stack,
+  Typography,
+} from "@mui/material";
 import { EmaInfo } from "./EmaInfo";
 import { HeaderSpacing } from "@/components/mui-components/HeaderSpacing";
 import { HeaderButton } from "@/components/mui-components/HeaderButton";
+import CommentCard from "./CommentCard";
+import { EmaComments } from "./EmaComments";
 
 export function EmaEnglishPage({ lang }) {
   const en = lang === "en";
@@ -106,7 +115,7 @@ export function EmaEnglishPage({ lang }) {
             </ParagraphMedium>
             <Stack spacing={3.5} pt={3}>
               <Button
-                variant="outlined"
+                variant="contained"
                 color="warning"
                 startIcon={<Podcasts />}
                 href="https://castbox.fm/channel/id5058728?utm_source=website&utm_medium=dlink&utm_campaign=web_share&utm_content=EMA%20English%20%7C%20English%20Music%20%7C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%20%D8%B2%D8%A8%D8%A7%D9%86"
@@ -120,7 +129,7 @@ export function EmaEnglishPage({ lang }) {
                 )}
               </Button>
               <Button
-                variant="outlined"
+                variant="contained"
                 startIcon={<Telegram />}
                 href="https://t.me/emaEnglish"
                 target="_blank"
@@ -128,6 +137,19 @@ export function EmaEnglishPage({ lang }) {
               >
                 {en ? <>Visit Telegram Channel</> : <>رفتن به کانال تلگرام</>}
               </Button>
+            </Stack>
+            <Stack spacing={4.5} pt={4}>
+              <Stack spacing={2.5}>
+                <Typography fontSize={36} fontWeight={300}>
+                  User Reviews
+                </Typography>
+                <Alert severity="info" sx={{ fontSize: 15 }}>
+                  <AlertTitle>Pay Attention!</AlertTitle>
+                  This reviews are the latest comments from Castbox, translated
+                  by Google and picked by AI! Updated every day.
+                </Alert>
+              </Stack>
+              <EmaComments />
             </Stack>
           </PageContent>
         </Container>
