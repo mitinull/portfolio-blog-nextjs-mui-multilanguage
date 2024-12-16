@@ -37,7 +37,7 @@ export function EmaComments({ en }) {
           }
           // startIcon={<ExpandCircleDown />}
         >
-          Show More Reviews
+          {en ? "See More Feedbacks" : "مشاهدهٔ نظرات بیشتر"}
         </Button>
       )}
     </Stack>

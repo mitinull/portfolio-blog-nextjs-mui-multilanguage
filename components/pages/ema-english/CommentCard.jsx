@@ -53,10 +53,10 @@ export default function CommentCard({ name, date, description, en }) {
         {en && (
           <Button
             size="small"
-            sx={{ p: 0 }}
+            sx={{ p: 0, pt: 1, fontSize: { xs: 12, sm: 13 }, fontWeight: 400 }}
             onClick={() => setIsOriginal((prev) => !prev)}
           >
-            {isOriginal ? "show translated comment" : "show original comment"}
+            {isOriginal ? "view translated comment" : "view original comment"}
           </Button>
         )}
       </CardContent>
