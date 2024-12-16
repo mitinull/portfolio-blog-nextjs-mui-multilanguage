@@ -25,7 +25,19 @@ export async function GET() {
       .textContent.split(":")[1]
       .trim();
 
-    return Response.json({ subs, plays });
+    const commentsHtml = htmlData.querySelectorAll(".commentItemBox");
+
+    const comments = Array.from(commentsHtml).map((comment) => {
+      const username =
+        comment.querySelector(".username")?.textContent.trim() || "Unknown";
+      const description =
+        comment.querySelector(".commentItemDes")?.textContent.trim() || "";
+      const date =
+        comment.querySelector(".commentItemDate")?.textContent.trim() || "";
+      return { username, description, date };
+    });
+
+    return Response.json({ subs, plays, comments });
   } catch (err) {
     console.log("Castbox Error");
     return Response.json("Unable to fetch data from CastBox!", { status: 502 });
