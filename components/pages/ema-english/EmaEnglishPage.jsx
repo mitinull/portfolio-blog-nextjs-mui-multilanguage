@@ -66,54 +66,74 @@ export function EmaEnglishPage({ lang }) {
         <Container sx={{ p: 0 }}>
           <Container maxWidth="md">
             <PageContent>
-              {!en && (
-                <ParagraphMedium>دربارهٔ اِما انگلیش بخوانید:</ParagraphMedium>
+              {en ? (
+                <>
+                  <ParagraphMedium>
+                    I'm neither a master at teaching English nor a music lover.
+                    However, English songs and music have played a significant
+                    role in my English learning journey, and I always wanted to
+                    share this experience with others.📚🤓
+                  </ParagraphMedium>
+                  <ParagraphMedium>
+                    I didn't know what "glitter" meant until I heard Dua Lipa's
+                    voice singing,{" "}
+                    <PageQuote>
+                      Glitter in the sky, glitter in our eyes, shining just the
+                      way we are.
+                    </PageQuote>{" "}
+                    After that, I looked up the meaning of "glitter" once, and
+                    it was enough for me to remember it forever! Do you know why
+                    I know the meaning of "ambition"? Because{" "}
+                    <PageQuote>
+                      All my friends are toxic, all ambitionless, so rude and
+                      always negative!
+                    </PageQuote>{" "}
+                    (This is another song if you haven't figured it out!)
+                  </ParagraphMedium>
+                  <ParagraphMedium>
+                    EMA English was created in the summer of 2022. We—Ebrahim,
+                    Mohammad, and Arad (or EMA)—were bored and thought, "Let's
+                    do something!💪" That's when we came up with the idea to
+                    record a podcast and teach English through lyrics, as we had
+                    been learning English together using song lyrics before.
+                  </ParagraphMedium>
+                  <ParagraphMedium>
+                    We started recording several episodes and uploaded them to
+                    Castbox. Initially, we thought, "OMG, this is awful.😅" We
+                    had (and probably still have) bad microphones, and we
+                    couldn't speak fluently, even in Persian! But it was fun, so
+                    we kept doing it. After recording several episodes, we
+                    gained more subscribers than we expected. However, we got
+                    busy and stopped recording for a while. Eventually, with
+                    just a few episodes, we ended up with more than 500
+                    subscribers without even telling anybody about the podcast!
+                  </ParagraphMedium>
+                  <ParagraphMedium>
+                    You can listen to the Persian podcast EMA English on Castbox
+                    or via our Telegram channel (t.me/emaEnglish). Thanks for
+                    reading, and I hope there will be glitter in your eyes! ✨👀
+                  </ParagraphMedium>
+                </>
+              ) : (
+                <>
+                  <ParagraphMedium>
+                    پادکست EMA English از تابستون ۲۰۲۲ به دنیا اومد، وقتی که من
+                    و ابراهیم و آراد (EMA) تصمیم گرفتیم با آهنگ‌های انگلیسی زبان
+                    یاد بگیریم و از این راه به دیگران هم آموزش بدیم.
+                  </ParagraphMedium>
+                  <ParagraphMedium>
+                    شروع کار کمی سخت بود. میکروفون‌هامون بی‌کیفیت بود (احتمالا
+                    هنوزم هست😅) و خیلی روون صحبت نمی‌کردیم! اما تجربه جذابی بود
+                    و به ضبط پادکست ادامه دادیم. بعد از چند قسمت، استقبال از
+                    پادکست خیلی بیشتر از چیزی بود که انتظار داشتیم.
+                  </ParagraphMedium>
+                  <ParagraphMedium>
+                    شما هم می‌تونید این تجربه رو با ما شریک بشید و پادکست EMA
+                    English رو در Castbox یا تلگرام (t.me/emaEnglish) دنبال
+                    کنید.
+                  </ParagraphMedium>
+                </>
               )}
-              <ParagraphMedium enInFa={lang === "fa"}>
-                I'm neither a master at teaching English nor a music lover.
-                However, English songs and music have played a significant role
-                in my English learning journey, and I always wanted to share
-                this experience with others.📚🤓
-              </ParagraphMedium>
-              <ParagraphMedium enInFa={lang === "fa"}>
-                I didn't know what "glitter" meant until I heard Dua Lipa's
-                voice singing,{" "}
-                <PageQuote>
-                  Glitter in the sky, glitter in our eyes, shining just the way
-                  we are.
-                </PageQuote>{" "}
-                After that, I looked up the meaning of "glitter" once, and it
-                was enough for me to remember it forever! Do you know why I know
-                the meaning of "ambition"? Because{" "}
-                <PageQuote>
-                  All my friends are toxic, all ambitionless, so rude and always
-                  negative!
-                </PageQuote>{" "}
-                (This is another song if you haven't figured it out!)
-              </ParagraphMedium>
-              <ParagraphMedium enInFa={lang === "fa"}>
-                EMA English was created in the summer of 2022. We—Ebrahim,
-                Mohammad, and Arad (or EMA)—were bored and thought, "Let's do
-                something!💪" That's when we came up with the idea to record a
-                podcast and teach English through lyrics, as we had been
-                learning English together using song lyrics before.
-              </ParagraphMedium>
-              <ParagraphMedium enInFa={lang === "fa"}>
-                We started recording several episodes and uploaded them to
-                Castbox. Initially, we thought, "OMG, this is awful.😅" We had
-                (and probably still have) bad microphones, and we couldn't speak
-                fluently, even in Persian! But it was fun, so we kept doing it.
-                After recording several episodes, we gained more subscribers
-                than we expected. However, we got busy and stopped recording for
-                a while. Eventually, with just a few episodes, we ended up with
-                more than 500 subscribers without even telling anybody about the
-                podcast!
-              </ParagraphMedium>
-              <ParagraphMedium enInFa={lang === "fa"}>
-                You can listen to the Persian podcast EMA English on Castbox or
-                via our Telegram channel (t.me/emaEnglish). Thanks for reading,
-                and I hope there will be glitter in your eyes! ✨👀
-              </ParagraphMedium>
               <Stack spacing={3.5} pt={3}>
                 <Button
                   variant="contained"
@@ -150,10 +170,10 @@ export function EmaEnglishPage({ lang }) {
                     </AlertTitle>
                     {en
                       ? `These reviews are the latest comments from Castbox,
-                        translated by Google, selected by AI, and updated every
-                        hour.`
+                      translated by Google, selected by AI, and updated every
+                      hour.`
                       : `این نظرات، جدیدترین کامنت‌ها از Castbox هستند که توسط 
-                         هوش مصنوعی گزینش شده‌اند و هر ساعت به‌روزرسانی می‌شوند.`}
+                      هوش مصنوعی گزینش شده‌اند و هر ساعت به‌روزرسانی می‌شوند.`}
                   </Alert>
                 </Stack>
                 <EmaComments en={en} />
