@@ -16,16 +16,17 @@ export function EmaComments({ en }) {
   return (
     <Stack>
       <Stack direction={{ xs: "column", sm: "column" }} spacing={4}>
-        {info.comments.slice(0, count).map((comment) => (
-          // todo: key??
-          <CommentCard
-            // key={comment.id}
-            name={comment.username}
-            date={comment.date}
-            description={comment.description}
-            en={en}
-          />
-        ))}
+        {info.comments.slice(0, count).map((comment, i) => {
+          return (
+            <CommentCard
+              key={comment.id}
+              name={comment.username}
+              date={comment.date}
+              description={comment.description}
+              en={en}
+            />
+          );
+        })}
       </Stack>
       {count < info.comments.length && (
         <Button

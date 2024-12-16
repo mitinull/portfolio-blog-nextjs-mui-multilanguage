@@ -25,8 +25,9 @@ export default function CommentCard({ name, date, description, en }) {
       <CardContent sx={{ pt: 1 }}>
         {(en ? (isOriginal ? description.fa : description.en) : description.fa)
           .split("\n")
-          .map((line) => (
+          .map((line, i) => (
             <Typography
+              key={i}
               fontWeight={300}
               fontSize={{ xs: 16, sm: 18 }}
               sx={{ color: "text.primary" }}
