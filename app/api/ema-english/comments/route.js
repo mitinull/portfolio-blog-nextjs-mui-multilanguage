@@ -1,5 +1,6 @@
 import { ROOT_URL } from "@/utils/constants";
 import { SHA256 } from "crypto-js";
+import Sentiment from "sentiment";
 
 async function translateFaToEn(text) {
   const response = await fetch(
@@ -36,6 +37,8 @@ function generateCommentId({ username, date, description }) {
 }
 
 export async function GET() {
+  const sentiment = new Sentiment();
+
   try {
     const response = await fetch(`${ROOT_URL}/api/ema-english/info`, {
       next: { revalidate: 60 },
@@ -51,11 +54,12 @@ export async function GET() {
 
     const uniqueComments = removeDuplicates(initialComments);
 
-    const finalComments = await Promise.all(
+    const commentsWithIdAndTranslation = await Promise.all(
       uniqueComments.map(async (comment) => {
         const translatedDescription = await translateFaToEn(
           comment.description
         );
+
         return {
           ...comment,
           description: { fa: comment.description, en: translatedDescription },
@@ -64,7 +68,12 @@ export async function GET() {
       })
     );
 
-    return Response.json({ comments: finalComments });
+    const pickedComments = commentsWithIdAndTranslation.filter((comment) => {
+      const comparative = sentiment.analyze(comment.description.en).comparative;
+      return comparative > 0.2;
+    });
+
+    return Response.json({ comments: pickedComments });
   } catch (err) {
     console.log("Comments Error", err);
     return Response.json("Unable to get comments!", { status: 502 });

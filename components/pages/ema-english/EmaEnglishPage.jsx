@@ -145,9 +145,15 @@ export function EmaEnglishPage({ lang }) {
                     User Reviews
                   </Typography>
                   <Alert severity="warning" sx={{ fontSize: 15 }}>
-                    <AlertTitle>Pay Attention!</AlertTitle>
-                    This reviews are the latest comments from Castbox,
-                    translated by Google and picked by AI! Updated every day.
+                    <AlertTitle>
+                      {en ? "Pay Attention!" : "توجه کنید!"}
+                    </AlertTitle>
+                    {en
+                      ? `These reviews are the latest comments from Castbox,
+                        translated by Google, selected by AI, and updated every
+                        hour.`
+                      : `این نظرات، جدیدترین کامنت‌ها از Castbox هستند که توسط 
+                         هوش مصنوعی گزینش شده‌اند و هر ساعت به‌روزرسانی می‌شوند.`}
                   </Alert>
                 </Stack>
                 <EmaComments en={en} />

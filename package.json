@@ -23,6 +23,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-spinners": "^0.14.1",
+    "sentiment": "^5.0.2",
     "sharp": "^0.33.4",
     "stylis": "^4.3.2",
     "stylis-plugin-rtl": "^2.1.1"
