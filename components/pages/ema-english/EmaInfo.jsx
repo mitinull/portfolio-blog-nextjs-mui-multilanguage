@@ -6,27 +6,10 @@ import { TextLoading } from "@/components/TextLoading";
 import { numberToPersian } from "@/utils/numberToPersian";
 import { Stack } from "@mui/material";
 import { useEffect, useState } from "react";
+import { useEma } from "./EmaContext";
 
 export function EmaInfo({ en }) {
-  const [info, setInfo] = useState();
-  const [error, setError] = useState(false);
-
-  useEffect(() => {
-    async function getEmaEnglishInfo() {
-      const res = await fetch("/api/ema-english-info");
-
-      const data = await res.json();
-
-      if (res.ok) {
-        setInfo(data);
-      } else {
-        console.error(data);
-        setError(true);
-      }
-    }
-
-    getEmaEnglishInfo();
-  }, []);
+  const { info, error } = useEma();
 
   return (
     <div>

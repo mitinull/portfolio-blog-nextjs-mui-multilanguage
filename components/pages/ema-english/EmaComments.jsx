@@ -2,65 +2,37 @@
 
 import { Button, Stack, Typography } from "@mui/material";
 import CommentCard from "./CommentCard";
-import { useState } from "react";
-import {
-  Expand,
-  ExpandCircleDown,
-  ExpandMore,
-  More,
-} from "@mui/icons-material";
+import { useEffect, useState } from "react";
+import { TextLoading } from "@/components/TextLoading";
+import { useEma } from "./EmaContext";
 
-export function EmaComments() {
-  const comments = [
-    { id: 1, name: "Ahmad Javani", date: "Oct 6th", text: "Very good!" },
-    { id: 1, name: "Ahmad Javani", date: "Oct 6th", text: "Very good!" },
-    { id: 1, name: "Ahmad Javani", date: "Oct 6th", text: "Very good!" },
-    {
-      id: 1,
-      name: "Ahmad Javani",
-      date: "Oct 6th",
-      text: "Hello guys, this teaching method was interesting for me, the only thing that seems to me is that the quality of your microphone is low.",
-    },
-    {
-      id: 1,
-      name: "Ahmad Javani",
-      date: "Oct 6th",
-      text: "Hello guys, this teaching method was interesting for me, the only thing that seems to me is that the quality of your microphone is low.",
-    },
-    {
-      id: 1,
-      name: "Ahmad Javani",
-      date: "Oct 6th",
-      text: "Hello guys, this teaching method was interesting for me, the only thing that seems to me is that the quality of your microphone is low.",
-    },
-    {
-      id: 1,
-      name: "Ahmad Javani",
-      date: "Oct 6th",
-      text: "Hello guys, this teaching method was interesting for me, the only thing that seems to me is that the quality of your microphone is low.",
-    },
-  ];
+export function EmaComments({ en }) {
+  const { info, error } = useEma();
 
   const [count, setCount] = useState(3);
+
+  if (!info?.comments) return <TextLoading />;
 
   return (
     <Stack>
       <Stack direction={{ xs: "column", sm: "column" }} spacing={4}>
-        {comments.slice(0, count).map((comment) => (
+        {info.comments.slice(0, count).map((comment) => (
+          // todo: key??
           <CommentCard
-            key={comment.id}
-            name={comment.name}
+            // key={comment.id}
+            name={comment.username}
             date={comment.date}
-            text={comment.text}
+            description={comment.description}
+            en={en}
           />
         ))}
       </Stack>
-      {count < comments.length && (
+      {count < info.comments.length && (
         <Button
           color="info"
           sx={{ mt: 3 }}
           onClick={() =>
-            setCount((prev) => Math.min(prev + 3, comments.length))
+            setCount((prev) => Math.min(prev + 3, info.comments.length))
           }
           // startIcon={<ExpandCircleDown />}
         >
