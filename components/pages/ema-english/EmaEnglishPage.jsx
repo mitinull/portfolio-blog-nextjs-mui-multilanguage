@@ -141,8 +141,8 @@ export function EmaEnglishPage({ lang }) {
               </Stack>
               <Stack spacing={4.5} pt={4}>
                 <Stack spacing={2.5}>
-                  <Typography fontSize={36} fontWeight={300}>
-                    User Reviews
+                  <Typography fontSize={{ xs: 32, sm: 36 }} fontWeight={300}>
+                    {en ? "Audience Feedback" : "نظرات شنوندگان"}
                   </Typography>
                   <Alert severity="warning" sx={{ fontSize: 15 }}>
                     <AlertTitle>
