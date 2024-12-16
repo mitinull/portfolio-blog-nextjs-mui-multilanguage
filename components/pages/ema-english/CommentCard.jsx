@@ -10,12 +10,27 @@ import { useState } from "react";
 export default function CommentCard({ name, date, description, en }) {
   const [isOriginal, setIsOriginal] = useState(false);
 
+  function getProfileBackgroundColor(letter) {
+    // Get the ASCII code of the character
+    const charCode = letter.charCodeAt(0);
+
+    // Use a hash-like formula to generate an RGB color
+    const red = (charCode * 137) % 256; // A unique constant
+    const green = (charCode * 197) % 256; // Another unique constant
+    const blue = (charCode * 151) % 256; // Yet another constant
+
+    // Return the RGB color as a string
+    return `rgb(${red}, ${green}, ${blue})`;
+  }
+
   return (
     <Card sx={{ p: { xs: 1, sm: 1.5 } }}>
       <CardHeader
         avatar={
-          // todo: different color for each letter.
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+          <Avatar
+            sx={{ bgcolor: getProfileBackgroundColor(name[0]) }}
+            aria-label="recipe"
+          >
             {name[0]}
           </Avatar>
         }
